@@ -26,7 +26,7 @@ function Header(){
               <div className="nav-inner">
                 <nav className="navbar navbar-expand-lg">
                   <a className="navbar-brand" href="index.html">
-                    <Image src="/assets/images/logo/white-logo.png" alt="Logo" width={170} height={40} />
+                    <Image src="/assets/images/logo/white-logo.png" alt="Logo" width={130} height={40} />
                   </a>
                   <button onClick={() => setNovo(true)} className="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -201,7 +201,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-4 col-12">
               <div className="single-footer f-about">
                 <div className="logo">
-                  <Image src="/assets/images/logo/white-logo.png" alt="Logo" width={170} height={40} />
+                  <Image src="/assets/images/logo/white-logo.png" alt="Logo" width={130} height={40} />
                 </div>
                 <p>Tornar o mundo um lugar melhor através da tecnologia.</p>
                 <ul className="social">
