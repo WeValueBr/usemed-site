@@ -35,8 +35,8 @@ function Header(){
                     <span className="toggler-icon"></span>
                     <span className="toggler-icon"></span>
                   </button>
-                  <div id="novo" className={"collapse navbar-collapse sub-menu-bar "+(novo ? "show" : "")} id="navbarSupportedContent">
-                    <ul id="novo" className="navbar-nav ms-auto">
+                  <div className={"collapse navbar-collapse sub-menu-bar "+(novo ? "show" : "")} id="navbarSupportedContent">
+                    <ul className="navbar-nav ms-auto">
                       <li className="nav-item">
                         <a href="#home" className="page-scroll active" aria-label="Toggle navigation">Início</a>
                       </li>
