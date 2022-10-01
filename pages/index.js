@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Features({icon,description,title}){
 
@@ -48,7 +49,7 @@ export default function Home() {
                         <a href="#clients" className="page-scroll" aria-label="Toggle navigation">Clientes</a>
                       </li>
                       <li className="nav-item">
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5521990452839&text=Ol%C3%A1%2C%20entrei%20pelo%20site%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20aplicativo." aria-label="Toggle navigation">Contato</a>
+                        <a rel="noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=5521990452839&text=Ol%C3%A1%2C%20entrei%20pelo%20site%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20aplicativo." aria-label="Toggle navigation">Contato</a>
                       </li>
                     </ul>
                   </div> 
@@ -72,7 +73,7 @@ export default function Home() {
                 </p>
                 <div className="button wow fadeInLeft" data-wow-delay=".8s">
                   <a href="#" className="btn"><i className="lni lni-apple"></i> App Store</a>
-                  <a target="_blank" href="https://play.google.com/store/apps/details?id=br.com.usemed" className="btn btn-alt"><i className="lni lni-play-store"></i> Google Play</a>
+                  <a rel="noreferrer" target="_blank" href="https://play.google.com/store/apps/details?id=br.com.usemed" className="btn btn-alt"><i className="lni lni-play-store"></i> Google Play</a>
                 </div>
               </div>
             </div>
@@ -187,7 +188,7 @@ export default function Home() {
               <div class="single-footer f-about">
                 <div class="logo">
                   <a href="index.html">
-                    <img src="assets/images/logo/white-logo.png" alt="#" />
+                    <Image src="/assets/images/logo/white-logo.png" alt="Logo" width={170} height={40} />
                   </a>
                 </div>
                 <p>Tornar o mundo um lugar melhor através da tecnologia.</p>
@@ -204,7 +205,7 @@ export default function Home() {
                   <div class="single-footer f-link">
                     <h3>Legal</h3>
                     <ul>
-                      <li><a href="/privacy">Política de Privacidade</a></li>
+                      <li><Link href="/privacy">Política de Privacidade</Link></li>
                     </ul>
                   </div>              
                 </div>
