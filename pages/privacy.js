@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useEffect,useState } from 'react'
 
@@ -23,22 +22,22 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div class="preloader" style={{display:loading ? 'block' : 'none'}}>
-                <div class="preloader-inner">
-                    <div class="preloader-icon">
+            <div className="preloader" style={{display:loading ? 'block' : 'none'}}>
+                <div className="preloader-inner">
+                    <div className="preloader-icon">
                         <span></span>
                         <span></span>
                     </div>
                 </div>
             </div>
-            <div class="error-area" style={{textAlign:'left'}}>
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="container">
-                            <div class="error-content">
+            <div className="error-area" style={{textAlign:'left'}}>
+                <div className="d-table">
+                    <div className="d-table-cell">
+                        <div className="container">
+                            <div className="error-content">
                                 <br/>
                                 <h2>CONFIDENCIALIDADE</h2>
-                                <p>Na forma como utilizada neste Termo, "Informação Confidencial" significa todo dado e informação de natureza confidencial, incluindo, sem limitação, a Plataforma e demais softwares e APIs, os segredos industriais e de negócios, financeiros, operacionais, econômicos, estratégicos, informações técnicas e qualquer outra informação de negócios relevante e quaisquer de suas cópias ou arquivos, quer tenham sido apresentadas de forma oral ou por escrito, por uma parte ("Parte Divulgadora") à outra parte ("Parte Receptora") nos termos deste Termo.</p>
+                                <p>Na forma como utilizada neste Termo, &quot;Informação Confidencial&quot; significa todo dado e informação de natureza confidencial, incluindo, sem limitação, a Plataforma e demais softwares e APIs, os segredos industriais e de negócios, financeiros, operacionais, econômicos, estratégicos, informações técnicas e qualquer outra informação de negócios relevante e quaisquer de suas cópias ou arquivos, quer tenham sido apresentadas de forma oral ou por escrito, por uma parte (&quot;Parte Divulgadora&quot;) à outra parte (&quot;Parte Receptora&quot;) nos termos deste Termo.</p>
                                 <p>As Informações Confidenciais não incluirão informações que (i) sejam ou se tornem de domínio público por qualquer meio, exceto se resultante de violação deste Termo; (ii) sejam de conhecimento da Parte Receptora à época da divulgação pela Parte Divulgadora, desde que tal conhecimento esteja documentado em arquivos que sejam de propriedade da Parte Receptora antes de tal divulgação; (iii) sejam posteriormente recebidas pela Parte Receptora de boa-fé através de um terceiro não relacionado que tivesse o direito de divulgar tais informações e (iv) tenham sido aprovadas por escrito como sendo de divulgação não restrita pela Parte Divulgadora.</p>
                                 <p>As Partes concordam que, sem o consentimento escrito da outra Parte, não poderão divulgar, direta ou indiretamente, no todo ou em parte, individualmente ou em conjunto com terceiros, qualquer Informação Confidencial a qualquer pessoa que não esteja vinculada a este Termo que necessite conhecer tal Informação Confidencial para os propósitos contemplados neste Termo. As Partes concordam ainda em: (i) obter, de qualquer indivíduo que necessite receber e que receba qualquer Informação Confidencial da outra parte, um compromisso de confidencialidade e de uso restrito, de acordo com os termos e condições aqui estabelecidas; e (ii) fazer valer por todas as formas tais compromissos e assistir ativamente a Parte Divulgadora na proteção de suas Informações Confidenciais.</p>
                                 <p>A Parte Receptora somente poderá divulgar as Informações Confidenciais quando exigido, nos casos a seguir: (i) quando a divulgação da Informação Confidencial for necessária para um procedimento administrativo ou judicial, desde que a Parte Receptora tenha primeiramente notificado a Parte Divulgadora por escrito a respeito da exigência de divulgação, com o intuito de permitir que a Parte Divulgadora defenda, limite ou proteja a Informação Confidencial; (ii) quando a divulgação da Informação Confidencial for exigida por decisão judicial baseada em lei; ou (iii) quando a Parte Divulgadora tenha dado seu consentimento prévio e por escrito para a divulgação da Informação Confidencial.</p>
