@@ -187,9 +187,7 @@ export default function Home() {
             <div className="col-lg-3 col-md-3 col-12" style={{textAlign:"center"}}>
               <Image src="/assets/images/clients/talitaaraujo.png" alt="Logo" width="230" height="100" />
             </div>
-            <div className="col-lg-3 col-md-3 col-12" style={{textAlign:"center"}}>
-              <Image src="/assets/images/clients/fonocom.png" alt="Logo" width={180} height={80} />
-            </div>
+            
           </div>
         </div>
       </section>
