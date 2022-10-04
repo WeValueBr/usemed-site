@@ -111,7 +111,7 @@ export default function Home() {
           </div>
           <div className="row">
           <div className="col-lg-4 col-md-6 col-12">
-              <Features icon="lni lni-alarm" title="Avisos de pendências" description="Tenha conhecimento das pendencias a serem feitas de atendimentos que ainda precisam de atenção. "  />
+              <Features icon="lni lni-alarm" title="Avisos de pendências" description="Receber lembretes das pendências dos atendimentos é fundamental para manter os prontuários atualizados e organizados."  />
             </div>
             <div className="col-lg-4 col-md-6 col-12">
               <Features icon="lni lni-calendar" title="Agenda" description="Tenha o controle da agenda da sua equipe  de forma prática e em tempo real através do agendamento online. Na agenda é possível finalizar, remarcar e desmarcar atendimentos e ter acesso atualizado ao status de cada atendimento. As informações da agenda podem ser acessadas de forma diária, semanal ou mensal."  />
@@ -129,7 +129,7 @@ export default function Home() {
               <Features icon="lni lni-fireworks" title="Ficha de evolução" description="Na ficha de evolução é registrado como o paciente estava antes, durante e ao final do atendimento, as condutas estabelecidas e como o paciente tem respondido ao tratamento. É importante que a clínica mantenha a ficha de evolução de seus pacientes devidamente atualizadas e que esses registros sejam armazenados de forma segura."  />
             </div>
             <div className="col-lg-4 col-md-6 col-12">
-              <Features icon="lni lni-bubble" title="Discussão de caso" description=""  />
+              <Features icon="lni lni-bubble" title="Discussão de caso" description="Espaço para discussão de casos de pacientes pela equipe que os acompanham. As informações registradas ficam armazenadas permanente e podem ser acessadas posteriormente."  />
             </div>
             <div className="col-lg-4 col-md-6 col-12">
               <Features icon="lni lni-postcard" title="Orientações parentais" description="Para potencializar a evolução do paciente, é importante a continuidade do tratamento no dia a dia. Para isso é importante que a família tenha acesso as orientações parentais. Neste espaço o profissional terá liberdade de deixar registrado essas orientações que são passadas para a família, promovendo assistência às famílias e garantindo o respaldo sobre o que é orientado."  />
@@ -203,9 +203,9 @@ export default function Home() {
                 </div>
                 <p>Tornar o mundo um lugar melhor através da tecnologia.</p>
                 <ul className="social">
-                  <li><a href="#"><i className="lni lni-facebook-filled"></i></a></li>                               
-                  <li><a href="#"><i className="lni lni-instagram"></i></a></li>
-                  <li><a href="#"><i className="lni lni-linkedin-original"></i></a></li>
+                  <li><a rel="noreferrer" target="_blank" href="https://www.facebook.com/usemedapp"><i className="lni lni-facebook-filled"></i></a></li>                               
+                  <li><a rel="noreferrer" target="_blank" href="https://www.instagram.com/usemed.app"><i className="lni lni-instagram"></i></a></li>
+                  <li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/usemed"><i className="lni lni-linkedin-original"></i></a></li>
                 </ul>
               </div>
             </div>
