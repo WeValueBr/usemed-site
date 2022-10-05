@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function Features({icon,description,title}){
 
@@ -13,7 +13,6 @@ function Features({icon,description,title}){
     </div>
   )
 }
-
 
 function Header(){
   const [novo,setNovo] = useState();
@@ -83,7 +82,7 @@ export default function Home() {
               <div className="hero-content">
                 <h1 className="wow fadeInLeft" data-wow-delay=".4s">Um aplicativo poderoso para sua clínica.</h1>
                 <p className="wow fadeInLeft" data-wow-delay=".6s">
-                  Tenha acesso aos dados dos seus pacientes em todas as plataformas, <b>IOS, Android e Web</b>. Baixe agora o aplicativo.
+                  Tenha acesso a todas as informações dos seus pacientes em todas as plataformas, <b>IOS, Android e Web</b>. Baixe agora o aplicativo.
                 </p>
                 <div className="button wow fadeInLeft" data-wow-delay=".8s">
                   <a href="#" className="btn"><i className="lni lni-apple"></i> App Store</a>
@@ -154,7 +153,7 @@ export default function Home() {
               <div className="row">
                 <div className="col-lg-3 col-md-3 col-12">
                   <div className="single-achievement wow fadeInUp" data-wow-delay=".2s">
-                    <h3 className="counter"><span id="secondo1" className="countup" cup-end="181">181</span></h3>
+                    <h3 className="counter"><span id="secondo1" className="countup" cup-end="213">213</span></h3>
                     <p>Atendimentos</p>
                   </div>
                 </div>
