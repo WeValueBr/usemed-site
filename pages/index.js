@@ -153,13 +153,13 @@ export default function Home() {
               <div className="row">
                 <div className="col-lg-3 col-md-3 col-12">
                   <div className="single-achievement wow fadeInUp" data-wow-delay=".2s">
-                    <h3 className="counter"><span id="secondo1" className="countup" cup-end="254">254</span></h3>
+                    <h3 className="counter"><span id="secondo1" className="countup" cup-end="307">307</span></h3>
                     <p>Atendimentos</p>
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-3 col-12">
                   <div className="single-achievement wow fadeInUp" data-wow-delay=".2s">
-                    <h3 className="counter"><span id="secondo1" className="countup" cup-end="84">84</span></h3>
+                    <h3 className="counter"><span id="secondo1" className="countup" cup-end="108">108</span></h3>
                     <p>Pacientes</p>
                   </div>
                 </div>
