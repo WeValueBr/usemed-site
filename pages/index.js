@@ -130,12 +130,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 col-12">
               <Features icon="lni lni-bubble" title="Discussão de caso" description="Espaço para discussão de casos de pacientes pela equipe que os acompanham. As informações registradas ficam armazenadas permanente e podem ser acessadas posteriormente."  />
             </div>
-            <div className="col-lg-4 col-md-6 col-12">
-              <Features icon="lni lni-postcard" title="Orientações parentais" description="Para potencializar a evolução do paciente, é importante a continuidade do tratamento no dia a dia. Para isso é importante que a família tenha acesso as orientações parentais. Neste espaço o profissional terá liberdade de deixar registrado essas orientações que são passadas para a família, promovendo assistência às famílias e garantindo o respaldo sobre o que é orientado."  />
-            </div>
-            <div className="col-lg-4 col-md-6 col-12">
-              <Features icon="lni lni-thought" title="Plano terapêutico" description="É no plano terapêutico que as terapeutas informam os objetivos estabelecidos para o paciente. O plano terapêutico pode ser acessado pela família do paciente e atualizado sempre que necessário pelas terapeutas responsáveis pelo caso."  />
-            </div>
+            
           </div>
         </div>
       </section>
@@ -153,13 +148,13 @@ export default function Home() {
               <div className="row">
                 <div className="col-lg-3 col-md-3 col-12">
                   <div className="single-achievement wow fadeInUp" data-wow-delay=".2s">
-                    <h3 className="counter"><span id="secondo1" className="countup" cup-end="307">307</span></h3>
+                    <h3 className="counter"><span id="secondo1" className="countup" cup-end="386">386</span></h3>
                     <p>Atendimentos</p>
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-3 col-12">
                   <div className="single-achievement wow fadeInUp" data-wow-delay=".2s">
-                    <h3 className="counter"><span id="secondo1" className="countup" cup-end="108">108</span></h3>
+                    <h3 className="counter"><span id="secondo1" className="countup" cup-end="197">197</span></h3>
                     <p>Pacientes</p>
                   </div>
                 </div>
