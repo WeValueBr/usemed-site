@@ -232,6 +232,120 @@ function Footer(){
     )
 }
 
+function Plan(){
+    const [type,setType] = useState(false)
+
+    return(
+        <section className="section position-static section-hiro d-flex" id="plan">
+            <div className="container">
+                <div className="mx-md mx-auto">
+                <div className="section-title-wrap text-center mb-4 mt-5">
+                    <div className="section-title-inner d-inline-flex">
+                        <h2 className="section-title" style={{textTransform:'none'}}>Tecnologia a serviço da saúde, inclusive a sua.</h2>
+                    </div>
+                    <p style={{textTransform:'none',fontSize:17}}>Soluções para administrar sua clínica ou consultório de forma prática e segura.</p>
+                </div>
+                <div className="d-block text-center mb-5">
+                    <label className="text-switch">
+                    <input type="checkbox" id="pricePlanToggle" onChange={() => setType(!type)}/>
+                    <span className="switch-tracker"></span>
+                    <span className="text-switch-label off">Mensal</span>
+                    <span className="text-switch-label on">Anual</span>
+                    </label>
+                </div>
+                <div className="scrollbar-on-mobile">
+                    <div className="box rounded-lg shadow shadow-more price-table">
+                        <div className="price-table-item" data-plan="monthly">
+                            <i className="icon-paper-plane"></i>
+                            <h3 className="font-lg">Básico</h3>
+                            <ul className="price-table-detail font-regular font-weight-light mt-3 mb-4">
+                                <li>Cadastro paciente</li>
+                                <li>Cadastro do profissional com especialidades de atuação</li>
+                                <li>Anamnese</li>
+                                <li>Evolução</li>                                    
+                                <li>Orientação parental</li>
+                                <li>Área para anexar  exames e relatórios (5GB Grátis)*</li>
+                                <li>Sinalização de motivo da falta com ou sem direito à reposição de atendimento</li>       
+                                <li>Plano terapêutico livre</li>  
+                                <li>Controle de perfil de usuários</li> 
+                                <li>Download e impressão da documentação sempre que necessário</li>  
+                                
+                            </ul>
+                            <div className="price-bottom same-height" style={{height: 112.797}}>
+                                {
+                                    type == false ?
+                                        <div className="price-table-price font-weight-bold font-lg" data-period="monthly">R$ 40,00 <small>/mês</small> <br/> </div>
+                                    :
+                                        <div className="price-table-price font-weight-bold font-lg" data-period="monthly">
+                                            R$ 420,00 <small>/mês</small>                                           
+                                        </div>
+                                }
+                                <small>por usuário</small>
+                                <div className="mt-3 text-center">
+                                    <a href="#" className="btn btn-success btn-curved btn-overlay">Comece agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="price-table-item featured" data-plan="monthly">
+                            <span className="price-table-label bg-warning text-white">Em breve</span>
+                            <i className="icon-aircraft"></i>
+                            <h3 className="font-lg">Plus</h3>
+                            <ul className="price-table-detail font-regular font-weight-light mt-3 mb-4">
+                                <li style={{fontWeight:'bold'}}><b>Plano Básico</b></li>
+                                <li>Contas a pagar</li>
+                                <li>Contas a receber</li>
+                                <li>Relatório de pagamento</li>                            
+                            </ul>
+                            <div className="price-bottom same-height" style={{height: 112.797}}>
+                                {
+                                    type == false ?
+                                        <div className="price-table-price font-weight-bold font-lg" data-period="monthly">R$ 50,00 <small>/mês</small> <br/> </div>
+                                    :
+                                        <div className="price-table-price font-weight-bold font-lg" data-period="monthly">
+                                            R$ 540,00 <small>/mês</small>                                           
+                                        </div>
+                                }
+                                <small>por usuário</small>
+                                <div className="mt-3 text-center">
+                                    <a href="#" className="btn btn-success btn-curved btn-overlay disabled">Comece agora</a>
+                                </div>
+                            </div>
+                        </div>                        
+                        </div>
+                    </div>
+                </div>
+                <div className="section-figure-wrap width-50vw  position-right-0 position-top-0 position-absolute pointer-events-none">
+                <figure className="section-figure position-relative m-0 z-index--1 opacity-lg-10">      
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 855.89 729.21">
+                    <defs>
+                        <linearGradient id="a" x1="889.61" y1="171.15" x2="1190.46" y2="171.15" gradientTransform="translate(-40.84 270.26) rotate(-15)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stopColor="#fbedc1" stopOpacity="0.3"></stop>
+                        <stop offset="0.23" stopColor="#fbeec4" stopOpacity="0.28"></stop>
+                        <stop offset="0.46" stopColor="#fcf1cf" stopOpacity="0.23"></stop>
+                        <stop offset="0.7" stopColor="#fdf6e0" stopOpacity="0.15"></stop>
+                        <stop offset="0.93" stopColor="#fffdf7" stopOpacity="0.04"></stop>
+                        <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path d="M720,1c8.32,33.56,15.26,81.37,7,137C710.67,248,607.74,263.87,573,385c-5.78,20.17-19.81,71.27-6,131,22.29,96.44,106.78,170.59,190,200,96.59,34.13,163,2.14,392-47,116.26-25,207-45.08,268-53V1Z" transform="translate(-561.11 -1)" style={{fill: '#fbedc1',opacity: 0.29}}></path>
+                    <path d="M965.71,50.85c-10.33,5.47-118.29,62.6-105.42,143.43,10.62,66.68,98.4,116.79,170.57,100.33,93.17-21.25,122.41-126.14,117.87-181.56-.6-7.37-9.42-50.45-44.69-74.07C1052.89,4.72,986.63,39.79,965.71,50.85Z" transform="translate(-561.11 -1)" style={{fill: 'url(#a)'}}></path>
+                    <g style={{opacity: 0.4}}>
+                        <line x1="124.46" y1="167.19" x2="40.09" y2="192" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
+                        <line x1="150.12" y1="183.1" x2="27.62" y2="219.12" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
+                        <line x1="164.16" y1="200.08" x2="25.46" y2="240.87" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
+                        <line x1="176.66" y1="240.18" x2="37.6" y2="281.08" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
+                        <line x1="173.19" y1="220.1" x2="29.53" y2="262.35" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
+                        <line x1="174.33" y1="263.54" x2="52.69" y2="299.32" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
+                        <line x1="162.78" y1="288.83" x2="76.55" y2="314.19" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
+                    </g>
+                    </svg>
+                </figure>
+                </div>
+            </div>
+        </section>
+    )
+}
+
 export default function Home() {
   return (
     <div >
@@ -273,8 +387,7 @@ export default function Home() {
                                 <div className="card item-has-overlay" style={{right:70,top:150}}>
                                     <Image
                                         className="card-img card-img-cover rounded-0 loading_src" alt="Image Description" data-was-processed="true"
-                                        src={fichapaciente.src}
-                                        
+                                        src={fichapaciente.src}                                        
                                         width={500}
                                         height={300}
                                     />
@@ -287,8 +400,7 @@ export default function Home() {
                                 <div className="card item-has-overlay"  style={{right:32,top:280}}>
                                     <Image
                                         className="card-img card-img-cover rounded-0 loading_src" alt="Image Description" data-was-processed="true"
-                                        src={cadastropaciente.src}
-                                        
+                                        src={cadastropaciente.src}                                        
                                         width={500}
                                         height={300}
                                     />
@@ -372,11 +484,9 @@ export default function Home() {
                                         <circle cx="231.14" cy="34.86" r="6"  style={{fill: '#ff9247'}}></circle>
                                     </svg>
                                     <div className="browser-mockup skrollable skrollable-after" data-center="transform:translate(0,0px);opacity: 1" data-500-center="transform:translate(0,200px);opacity: 0.3"  style={{transform:'translate(0px, 0px)',opacity:1}}>
-                                       
                                         <Image
                                             className="img-fluid image-shadow loading_src" alt="Image Description" data-was-processed="true"
-                                            src={fichapaciente.src}
-                                            
+                                            src={fichapaciente.src}                                            
                                             width={440}
                                             height={200}
                                         />
@@ -396,7 +506,7 @@ export default function Home() {
                                 <div className="section-title-wrap--simple section-title-center-onMobile">
                                     <div className="section-title-inner d-inline-block">
                                         <span className="title-sep-hr"></span>
-                                        <h2 className="section-title text-left">Cadastrado de <span className="d-block font-weight-light">pacientes.</span></h2>
+                                        <h2 className="section-title text-left">Cadastro de <span className="d-block font-weight-light">pacientes.</span></h2>
                                     </div>
                                     <p className="text-muted font-weight-light">Informações pessoais, área de observações, responsáveis principais e financeiros com registro de CPF e endereço, facilitando emissão de notas fiscais e recibos.</p>
                                 </div>
@@ -420,9 +530,9 @@ export default function Home() {
                                 <div className="section-title-wrap--simple section-title-center-onMobile mb-md-5">
                                     <div className="section-title-inner d-inline-block">
                                         <span className="title-sep-hr"></span>
-                                        <h2 className="section-title text-left">Graficos</h2>
+                                        <h2 className="section-title text-left">Gráficos</h2>
                                     </div>
-                                    <p className="text-muted font-weight-light">O carefly possibilita que o profissional ou administrador verifique o andamento dos atendimentos de acordo com o status: agendado, finalizado, falta com direito à reposição, falta sem direito à reposição, profissional desmarcou.</p>
+                                    <p className="text-muted font-weight-light">O Carefly possibilita que o profissional ou administrador verifique o andamento dos atendimentos de acordo com o status: agendado, finalizado, falta com direito à reposição, falta sem direito à reposição, profissional desmarcou.</p>
                                 </div>
                             </div>
                             <div className="col-md-7 mt-5 mt-md-0">
@@ -438,8 +548,7 @@ export default function Home() {
                                        
                                         <Image
                                             className="img-fluid image-shadow loading_src" alt="Image Description" data-was-processed="true"
-                                            src={grafico.src}
-                                            
+                                            src={grafico.src}                                            
                                             width={430}
                                             height={200}
                                         />
@@ -512,105 +621,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="section position-static section-hiro d-flex" id="plan">
-                <div className="container">
-                    <div className="mx-md mx-auto">
-                    <div className="section-title-wrap text-center mb-4 mt-5">
-                        <div className="section-title-inner d-inline-flex">
-                            <h2 className="section-title" style={{textTransform:'none'}}>Tecnologia a serviço da saúde, inclusive a sua.</h2>
-                        </div>
-                        <p style={{textTransform:'none',fontSize:17}}>Soluções para administrar sua clínica ou consultório de forma prática e segura.</p>
-                    </div>
-                    <div className="d-block text-center mb-5">
-                        <label className="text-switch">
-                        <input type="checkbox" id="pricePlanToggle"/>
-                        <span className="switch-tracker"></span>
-                        <span className="text-switch-label off">Mensal</span>
-                        <span className="text-switch-label on">Anual</span>
-                        </label>
-                    </div>
-                    <div className="scrollbar-on-mobile">
-                        <div className="box rounded-lg shadow shadow-more price-table">
-                            <div className="price-table-item" data-plan="monthly">
-                                <i className="icon-paper-plane"></i>
-                                <h3 className="font-lg">Básico</h3>
-                                <ul className="price-table-detail font-regular font-weight-light mt-3 mb-4">
-                                    <li>Cadastro paciente</li>
-                                    <li>Cadastro do profissional com especialidades de atuação</li>
-                                    <li>Anamnese</li>
-                                    <li>Evolução</li>                                    
-                                    <li>Orientação parental</li>
-                                    <li>Área para anexar  exames e relatórios (5GB Grátis)*</li>
-                                    <li>Sinalização de motivo da falta com ou sem direito à reposição de atendimento</li>       
-                                    <li>Plano terapêutico livre</li>  
-                                    <li>Controle de perfil de usuários</li> 
-                                    <li>Download e impressão da documentação sempre que necessário</li>  
-                                    
-                                </ul>
-                                <div className="price-bottom same-height" style={{height: 112.797}}>
-                                <div className="price-table-price font-weight-bold font-lg" data-period="monthly">R$ 40,00 <small>/mês</small> <br/> <small>por usuário</small></div>
-                                <div className="price-table-price font-weight-bold font-lg" data-period="yearly">
-                                    950$ <small>/yr</small>
-                                    <span className="price-table-discount-label bg-light-global text-global">10% Off</span>
-                                </div>
-                                <div className="mt-3 text-center">
-                                    <a href="#" className="btn btn-success btn-curved btn-overlay">Comece agora</a>
-                                </div>
-                                </div>
-                            </div>
-                            <div className="price-table-item featured" data-plan="monthly">
-                                <span className="price-table-label bg-warning text-white">Em breve</span>
-                                <i className="icon-aircraft"></i>
-                                <h3 className="font-lg">Plus</h3>
-                                <ul className="price-table-detail font-regular font-weight-light mt-3 mb-4">
-                                    <li style={{fontWeight:'bold'}}><b>Plano Básico</b></li>
-                                    <li>Contas a pagar</li>
-                                    <li>Contas a receber</li>
-                                    <li>Relatório de pagamento</li>                            
-                                </ul>
-                                <div className="price-bottom same-height" style={{height: 112.797}}>
-                                    <div className="price-table-price font-weight-bold font-lg" data-period="monthly">R$ 50,00 <small>/mês</small> <br/> <small>por usuário</small></div>
-                                    <div className="price-table-price font-weight-bold font-lg" data-period="yearly">
-                                        950$ <small>/yr</small>
-                                        <span className="price-table-discount-label bg-light-global text-global">10% Off</span>
-                                    </div>
-                                    <div className="mt-3 text-center">
-                                        <a href="#" className="btn btn-success btn-curved btn-overlay disabled">Comece agora</a>
-                                    </div>
-                                </div>
-                            </div>                        
-                            </div>
-                        </div>
-                    </div>
-                    <div className="section-figure-wrap width-50vw  position-right-0 position-top-0 position-absolute pointer-events-none">
-                    <figure className="section-figure position-relative m-0 z-index--1 opacity-lg-10">      
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 855.89 729.21">
-                        <defs>
-                            <linearGradient id="a" x1="889.61" y1="171.15" x2="1190.46" y2="171.15" gradientTransform="translate(-40.84 270.26) rotate(-15)" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stopColor="#fbedc1" stopOpacity="0.3"></stop>
-                            <stop offset="0.23" stopColor="#fbeec4" stopOpacity="0.28"></stop>
-                            <stop offset="0.46" stopColor="#fcf1cf" stopOpacity="0.23"></stop>
-                            <stop offset="0.7" stopColor="#fdf6e0" stopOpacity="0.15"></stop>
-                            <stop offset="0.93" stopColor="#fffdf7" stopOpacity="0.04"></stop>
-                            <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
-                            </linearGradient>
-                        </defs>
-                        <path d="M720,1c8.32,33.56,15.26,81.37,7,137C710.67,248,607.74,263.87,573,385c-5.78,20.17-19.81,71.27-6,131,22.29,96.44,106.78,170.59,190,200,96.59,34.13,163,2.14,392-47,116.26-25,207-45.08,268-53V1Z" transform="translate(-561.11 -1)" style={{fill: '#fbedc1',opacity: 0.29}}></path>
-                        <path d="M965.71,50.85c-10.33,5.47-118.29,62.6-105.42,143.43,10.62,66.68,98.4,116.79,170.57,100.33,93.17-21.25,122.41-126.14,117.87-181.56-.6-7.37-9.42-50.45-44.69-74.07C1052.89,4.72,986.63,39.79,965.71,50.85Z" transform="translate(-561.11 -1)" style={{fill: 'url(#a)'}}></path>
-                        <g style={{opacity: 0.4}}>
-                            <line x1="124.46" y1="167.19" x2="40.09" y2="192" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
-                            <line x1="150.12" y1="183.1" x2="27.62" y2="219.12" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
-                            <line x1="164.16" y1="200.08" x2="25.46" y2="240.87" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
-                            <line x1="176.66" y1="240.18" x2="37.6" y2="281.08" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
-                            <line x1="173.19" y1="220.1" x2="29.53" y2="262.35" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
-                            <line x1="174.33" y1="263.54" x2="52.69" y2="299.32" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
-                            <line x1="162.78" y1="288.83" x2="76.55" y2="314.19" style={{fill: 'none',stroke: '#fbedc1',strokeMiterlimit: 10,strokeWidth: 3}}></line>
-                        </g>
-                        </svg>
-                    </figure>
-                    </div>
-                </div>
-            </section>
+            <Plan />
         </main>
         <Footer/>
     </div>
