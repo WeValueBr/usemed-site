@@ -116,7 +116,7 @@ export default function Footer(){
                                     <div className="footer-social">
                                         <ul className="list-inline social-list ">
                                             
-                                            <li className="list-inline-item"><a href="https://www.instagram.com/carefly.com.br/" target="_blank" ><i className="icon-instagram"></i></a></li>
+                                            <li className="list-inline-item"><a href="https://www.instagram.com/carefly.com.br/" rel="noreferrer" target="_blank" ><i className="icon-instagram"></i></a></li>
                                             
                                         </ul>
                                     </div>                            

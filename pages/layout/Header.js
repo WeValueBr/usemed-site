@@ -7,7 +7,7 @@ export default function Header(){
                 <div className="row align-items-center">
                     <div className="header-nav w-100">
                         <nav className="navbar navbar-light navbar-expand-lg has-mega-menu-advanced">                            
-                            <a className="navbar-brand header-brand" href="../html/index-intro.html">
+                            
                             <Image
                                     className="header-logo img-fluid loading_src"
                                     src={carefly.src}
@@ -15,8 +15,7 @@ export default function Header(){
                                     width={700}
                                     height={250}
                                 />
-                                
-                            </a>
+                        
                             
                             <div className="header-menu collapse navbar-collapse">
                                 <ul className="navbar-nav mr-auto">                                    
@@ -44,7 +43,7 @@ export default function Header(){
                                     <ul className="list-inline m-0">
                                       
                                         <li className="list-inline-item">
-                                            <a href="https://carefly.app" target="_blank" className="btn btn-global btn-curved btn-overlay d-none d-lg-block">
+                                            <a href="https://carefly.app" rel="noreferrer" target="_blank" className="btn btn-global btn-curved btn-overlay d-none d-lg-block">
                                                Entrar
                                             </a>                                            
                                             <button type="button" className="btn menu-toggle d-block d-lg-none" style={{padding:10}}><i className="icon--menu-line"></i></button>
