@@ -2716,6 +2716,10 @@ span.expand.loading-bar {
 .footer-global .footer-list li a:hover {
   color: #fff;
 }
+.gts01-1 {
+  fill: url(#linear-gradient01);
+  opacity:0.2
+}
 .footer-global-backsvg {
   position: absolute;
   top: 0;
@@ -2732,6 +2736,35 @@ span.expand.loading-bar {
   left: 50px;
 
 }
+.spdown-1 {
+  fill:#fff;
+  opacity: 0.19;
+}
+
+.spdown-2 {
+  fill:#fff;
+  opacity: 0.43;
+}
+.spdown-3 {
+  fill:#fff;
+}
+.spup-3 {
+  fill: #fff;
+}
+.spup-2 {
+  fill: #fff;
+  opacity: 0.56;
+}
+.spup-1 {
+  fill: #fff;
+  opacity: 0.3;
+}
+.dotted01-1{
+  fill:#00bf6e;
+}
+.dotted01-2{
+
+}.dotted01-3{fill:#e85998;opacity:0.75;}.dotted01-10,.dotted01-11,.dotted01-12,.dotted01-13,.dotted01-14,.dotted01-15,.dotted01-16,.dotted01-17,.dotted01-18,.dotted01-19,.dotted01-20,.dotted01-21,.dotted01-22,.dotted01-23,.dotted01-24,.dotted01-25,.dotted01-26,.dotted01-27,.dotted01-28,.dotted01-29,.dotted01-30,.dotted01-31,.dotted01-32,.dotted01-33,.dotted01-34,.dotted01-35,.dotted01-36,.dotted01-37,.dotted01-38,.dotted01-39,.dotted01-4,.dotted01-40,.dotted01-41,.dotted01-5,.dotted01-6,.dotted01-7,.dotted01-8,.dotted01-9{fill:none;stroke-miterlimit:10;}.dotted01-4,.dotted01-5{stroke:url(#linear-gradient);}.dotted01-11,.dotted01-13,.dotted01-15,.dotted01-17,.dotted01-19,.dotted01-21,.dotted01-23,.dotted01-25,.dotted01-27,.dotted01-29,.dotted01-31,.dotted01-33,.dotted01-35,.dotted01-37,.dotted01-39,.dotted01-41,.dotted01-5,.dotted01-7,.dotted01-9{stroke-dasharray:1.01 15.13;}.dotted01-6,.dotted01-7{stroke:url(#linear-gradient-5);}.dotted01-8,.dotted01-9{stroke:url(#linear-gradient-9);}.dotted01-10,.dotted01-11{stroke:url(#linear-gradient-13);}.dotted01-12,.dotted01-13{stroke:url(#linear-gradient-17);}.dotted01-14,.dotted01-15{stroke:url(#linear-gradient-21);}.dotted01-16,.dotted01-17{stroke:url(#linear-gradient-25);}.dotted01-18,.dotted01-19{stroke:url(#linear-gradient-29);}.dotted01-20,.dotted01-21{stroke:url(#linear-gradient-33);}.dotted01-22,.dotted01-23{stroke:url(#linear-gradient-37);}.dotted01-24,.dotted01-25{stroke:url(#linear-gradient-41);}.dotted01-26,.dotted01-27{stroke:url(#linear-gradient-45);}.dotted01-28,.dotted01-29{stroke:url(#linear-gradient-49);}.dotted01-30,.dotted01-31{stroke:url(#linear-gradient-53);}.dotted01-32,.dotted01-33{stroke:url(#linear-gradient-57);}.dotted01-34,.dotted01-35{stroke:url(#linear-gradient-61);}.dotted01-36,.dotted01-37{stroke:url(#linear-gradient-65);}.dotted01-38,.dotted01-39{stroke:url(#linear-gradient-69);}.dotted01-40,.dotted01-41{stroke:url(#linear-gradient-73);}
 .footer-global-backsvg svg:nth-child(2) {
   bottom: auto;
   top: 85px;
