@@ -407,159 +407,159 @@ function View(){
 
     return(
         <section class="section section-middle-padding  bg-light-primary overflow-hidden section-angled-border" id="about">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 126" class="section-top-angled-border">
-            <polygon points="0 0 1920 0 1920 67 0 126 0 0" style={{fill: '#fff'}}></polygon>
-        </svg>
-        <div class="container">
-            <div class="section-body">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 col-md-12 my-lg-0 my-5">
-                        <div class="section-title-wrap text-left section-title-wrap--left section-title-wrap-md-center mb-5 mb-lg-0">
-                            <div class="section-title-inner d-inline-block">
-                                <h2 class="section-title">Carefly <span class="d-block font-weight-light" style={{textTransform:'none'}}>é pra mim?</span></h2>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 126" class="section-top-angled-border">
+                <polygon points="0 0 1920 0 1920 67 0 126 0 0" style={{fill: '#fff'}}></polygon>
+            </svg>
+            <div class="container">
+                <div class="section-body">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12 my-lg-0 my-5">
+                            <div class="section-title-wrap text-left section-title-wrap--left section-title-wrap-md-center mb-5 mb-lg-0">
+                                <div class="section-title-inner d-inline-block">
+                                    <h2 class="section-title">Carefly <span class="d-block font-weight-light" style={{textTransform:'none'}}>é pra mim?</span></h2>
+                                </div>
+                                <p style={{textTransform:'none'}}>Se você é profissional da saúde atuando com agendamento e preenchimento de prontuário, esse sistema é para você! O Carefly vem sendo desenvolvido por uma equipe de terapeutas e programadores para proporcionar a melhor experiência para esse público de profissionais da saúde que se preocupam com organização e seriedade sem deixar a segurança, praticidade e sustentabilidade de lado! </p>
+                                <div class="row mt-3">
+                                    <div class="col-md-4 col-sm-4 mb-3">
+                                        <div class="simple-icon-text">
+                                            <h3 class="simple-icon-text-title font-md mb-1"><i class="icon-business font-xxl"></i> 1439</h3>
+                                            <p class="font-regular font-weight-light">Atendimentos finalizados</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 mb-4">
+                                        <div class="simple-icon-text">
+                                            <h3 class="simple-icon-text-title font-md mb-1"><i class="icon-happy font-xxl"></i> 290</h3>
+                                            <p class="font-regular font-weight-light">Pacientes cadastrados</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 mb-4">
+                                        <div class="simple-icon-text">
+                                            <h3 class="simple-icon-text-title font-md mb-1"><i class="icon-happy font-xxl"></i> 40</h3>
+                                            <p class="font-regular font-weight-light">Terapeutas cadastrados</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
                             </div>
-                            <p style={{textTransform:'none'}}>Se você é profissional da saúde atuando com agendamento e preenchimento de prontuário, esse sistema é para você! O Carefly vem sendo desenvolvido por uma equipe de terapeutas e programadores para proporcionar a melhor experiência para esse público de profissionais da saúde que se preocupam com organização e seriedade sem deixar a segurança, praticidade e sustentabilidade de lado! </p>
-                            <div class="row mt-3">
-                                <div class="col-md-4 col-sm-4 mb-3">
-                                    <div class="simple-icon-text">
-                                        <h3 class="simple-icon-text-title font-md mb-1"><i class="icon-business font-xxl"></i> 1439</h3>
-                                        <p class="font-regular font-weight-light">Atendimentos finalizados</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4 mb-4">
-                                    <div class="simple-icon-text">
-                                        <h3 class="simple-icon-text-title font-md mb-1"><i class="icon-happy font-xxl"></i> 290</h3>
-                                        <p class="font-regular font-weight-light">Pacientes cadastrados</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4 mb-4">
-                                    <div class="simple-icon-text">
-                                        <h3 class="simple-icon-text-title font-md mb-1"><i class="icon-happy font-xxl"></i> 36</h3>
-                                        <p class="font-regular font-weight-light">Terapeutas cadastrados</p>
-                                    </div>
-                                </div>
-                            </div>
-                          
                         </div>
-                    </div>
-                    <div class="col-lg-8 col-md-12 pt-lg-0 pt-5">
-                        <div class="images-parallax-mixed">
-                          
-                            <div class="section-title--back dotted--back inverse">
-                                <svg id="Layer_01" data-name="Layer 01" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 348.5 436">
-                                    <defs>
-                                        <linearGradient id="linear-gradient" x1="9.5" y1="73.5" x2="348.5" y2="73.5" gradientUnits="userSpaceOnUse">
-                                            <stop offset="0" stop-color="#4f4f4f"></stop>
-                                            <stop offset="0.64" stop-color="#4f4f4f" stop-opacity="0.32"></stop>
-                                            <stop offset="1" stop-color="#4f4f4f" stop-opacity="0"></stop>
-                                        </linearGradient>
-                                        <linearGradient id="linear-gradient-5" y1="93.5" y2="93.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-9" y1="113.5" y2="113.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-13" y1="133.5" y2="133.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-17" y1="173.5" y2="173.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-21" y1="153.5" y2="153.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-25" y1="193.5" y2="193.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-29" y1="253.5" y2="253.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-33" y1="313.5" y2="313.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-37" y1="273.5" y2="273.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-41" y1="213.5" y2="213.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-45" y1="333.5" y2="333.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-49" y1="353.5" y2="353.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-53" y1="373.5" y2="373.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-57" y1="393.5" y2="393.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-61" y1="413.5" y2="413.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-65" y1="232.5" y2="232.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-69" y1="293.5" y2="293.5" xlinkHref="#linear-gradient"></linearGradient>
-                                        <linearGradient id="linear-gradient-73" y1="53.5" y2="53.5" xlinkHref="#linear-gradient"></linearGradient>
-                                    </defs>
-                                    <circle class="dotted01-1" cx="52" cy="6" r="6"></circle>
-                                    <circle class="dotted01-2" cx="139" cy="430" r="6"></circle>
-                                    <circle class="dotted01-3" cx="10" cy="51" r="10"></circle>
-                                    <g id="Layer_2" data-name="Layer 2" style={{opacity:0.5}}>
-                                    <polyline class="dotted01-4" points="10 73.5 9.5 73.5 10 73.5"></polyline>
-                                    <line class="dotted01-5" x1="25.13" y1="73.5" x2="340.43" y2="73.5"></line>
-                                    <polyline class="dotted01-4" points="348 73.5 348.5 73.5 348 73.5"></polyline>
-                                    <line class="dotted01-5" x1="332.87" y1="73.5" x2="17.57" y2="73.5"></line>
-                                    <polyline class="dotted01-6" points="10 93.5 9.5 93.5 10 93.5"></polyline>
-                                    <line class="dotted01-7" x1="25.13" y1="93.5" x2="340.43" y2="93.5"></line>
-                                    <polyline class="dotted01-6" points="348 93.5 348.5 93.5 348 93.5"></polyline>
-                                    <line class="dotted01-7" x1="332.87" y1="93.5" x2="17.57" y2="93.5"></line>
-                                    <polyline class="dotted01-8" points="10 113.5 9.5 113.5 10 113.5"></polyline>
-                                    <line class="dotted01-9" x1="25.13" y1="113.5" x2="340.43" y2="113.5"></line>
-                                    <polyline class="dotted01-8" points="348 113.5 348.5 113.5 348 113.5"></polyline>
-                                    <line class="dotted01-9" x1="332.87" y1="113.5" x2="17.57" y2="113.5"></line>
-                                    <polyline class="dotted01-10" points="10 133.5 9.5 133.5 10 133.5"></polyline>
-                                    <line class="dotted01-11" x1="25.13" y1="133.5" x2="340.43" y2="133.5"></line>
-                                    <polyline class="dotted01-10" points="348 133.5 348.5 133.5 348 133.5"></polyline>
-                                    <line class="dotted01-11" x1="332.87" y1="133.5" x2="17.57" y2="133.5"></line>
-                                    <polyline class="dotted01-12" points="10 173.5 9.5 173.5 10 173.5"></polyline>
-                                    <line class="dotted01-13" x1="25.13" y1="173.5" x2="340.43" y2="173.5"></line>
-                                    <polyline class="dotted01-12" points="348 173.5 348.5 173.5 348 173.5"></polyline>
-                                    <line class="dotted01-13" x1="332.87" y1="173.5" x2="17.57" y2="173.5"></line>
-                                    <polyline class="dotted01-14" points="10 153.5 9.5 153.5 10 153.5"></polyline>
-                                    <line class="dotted01-15" x1="25.13" y1="153.5" x2="340.43" y2="153.5"></line>
-                                    <polyline class="dotted01-14" points="348 153.5 348.5 153.5 348 153.5"></polyline>
-                                    <line class="dotted01-15" x1="332.87" y1="153.5" x2="17.57" y2="153.5"></line>
-                                    <polyline class="dotted01-16" points="10 193.5 9.5 193.5 10 193.5"></polyline>
-                                    <line class="dotted01-17" x1="25.13" y1="193.5" x2="340.43" y2="193.5"></line>
-                                    <polyline class="dotted01-16" points="348 193.5 348.5 193.5 348 193.5"></polyline>
-                                    <line class="dotted01-17" x1="332.87" y1="193.5" x2="17.57" y2="193.5"></line>
-                                    <polyline class="dotted01-18" points="10 253.5 9.5 253.5 10 253.5"></polyline>
-                                    <line class="dotted01-19" x1="25.13" y1="253.5" x2="340.43" y2="253.5"></line>
-                                    <polyline class="dotted01-18" points="348 253.5 348.5 253.5 348 253.5"></polyline>
-                                    <line class="dotted01-19" x1="332.87" y1="253.5" x2="17.57" y2="253.5"></line>
-                                    <polyline class="dotted01-20" points="10 313.5 9.5 313.5 10 313.5"></polyline>
-                                    <line class="dotted01-21" x1="25.13" y1="313.5" x2="340.43" y2="313.5"></line>
-                                    <polyline class="dotted01-20" points="348 313.5 348.5 313.5 348 313.5"></polyline>
-                                    <line class="dotted01-21" x1="332.87" y1="313.5" x2="17.57" y2="313.5"></line>
-                                    <polyline class="dotted01-22" points="10 273.5 9.5 273.5 10 273.5"></polyline>
-                                    <line class="dotted01-23" x1="25.13" y1="273.5" x2="340.43" y2="273.5"></line>
-                                    <polyline class="dotted01-22" points="348 273.5 348.5 273.5 348 273.5"></polyline>
-                                    <line class="dotted01-23" x1="332.87" y1="273.5" x2="17.57" y2="273.5"></line>
-                                    <polyline class="dotted01-24" points="10 213.5 9.5 213.5 10 213.5"></polyline>
-                                    <line class="dotted01-25" x1="25.13" y1="213.5" x2="340.43" y2="213.5"></line>
-                                    <polyline class="dotted01-24" points="348 213.5 348.5 213.5 348 213.5"></polyline>
-                                    <line class="dotted01-25" x1="332.87" y1="213.5" x2="17.57" y2="213.5"></line>
-                                    <polyline class="dotted01-26" points="10 333.5 9.5 333.5 10 333.5"></polyline>
-                                    <line class="dotted01-27" x1="25.13" y1="333.5" x2="340.43" y2="333.5"></line>
-                                    <polyline class="dotted01-26" points="348 333.5 348.5 333.5 348 333.5"></polyline>
-                                    <line class="dotted01-27" x1="332.87" y1="333.5" x2="17.57" y2="333.5"></line>
-                                    <polyline class="dotted01-28" points="10 353.5 9.5 353.5 10 353.5"></polyline>
-                                    <line class="dotted01-29" x1="25.13" y1="353.5" x2="340.43" y2="353.5"></line>
-                                    <polyline class="dotted01-28" points="348 353.5 348.5 353.5 348 353.5"></polyline>
-                                    <line class="dotted01-29" x1="332.87" y1="353.5" x2="17.57" y2="353.5"></line>
-                                    <polyline class="dotted01-30" points="10 373.5 9.5 373.5 10 373.5"></polyline>
-                                    <line class="dotted01-31" x1="25.13" y1="373.5" x2="340.43" y2="373.5"></line>
-                                    <polyline class="dotted01-30" points="348 373.5 348.5 373.5 348 373.5"></polyline>
-                                    <line class="dotted01-31" x1="332.87" y1="373.5" x2="17.57" y2="373.5"></line>
-                                    <polyline class="dotted01-32" points="10 393.5 9.5 393.5 10 393.5"></polyline>
-                                    <line class="dotted01-33" x1="25.13" y1="393.5" x2="340.43" y2="393.5"></line>
-                                    <polyline class="dotted01-32" points="348 393.5 348.5 393.5 348 393.5"></polyline>
-                                    <line class="dotted01-33" x1="332.87" y1="393.5" x2="17.57" y2="393.5"></line>
-                                    <polyline class="dotted01-34" points="10 413.5 9.5 413.5 10 413.5"></polyline>
-                                    <line class="dotted01-35" x1="25.13" y1="413.5" x2="340.43" y2="413.5"></line>
-                                    <polyline class="dotted01-34" points="348 413.5 348.5 413.5 348 413.5"></polyline>
-                                    <line class="dotted01-35" x1="332.87" y1="413.5" x2="17.57" y2="413.5"></line>
-                                    <polyline class="dotted01-36" points="10 232.5 9.5 232.5 10 232.5"></polyline>
-                                    <line class="dotted01-37" x1="25.13" y1="232.5" x2="340.43" y2="232.5"></line>
-                                    <polyline class="dotted01-36" points="348 232.5 348.5 232.5 348 232.5"></polyline>
-                                    <line class="dotted01-37" x1="332.87" y1="232.5" x2="17.57" y2="232.5"></line>
-                                    <polyline class="dotted01-38" points="10 293.5 9.5 293.5 10 293.5"></polyline>
-                                    <line class="dotted01-39" x1="25.13" y1="293.5" x2="340.43" y2="293.5"></line>
-                                    <polyline class="dotted01-38" points="348 293.5 348.5 293.5 348 293.5"></polyline>
-                                    <line class="dotted01-39" x1="332.87" y1="293.5" x2="17.57" y2="293.5"></line><polyline class="dotted01-40" points="10 53.5 9.5 53.5 10 53.5"></polyline><line class="dotted01-41" x1="25.13" y1="53.5" x2="340.43" y2="53.5"></line><polyline class="dotted01-40" points="348 53.5 348.5 53.5 348 53.5"></polyline><line class="dotted01-41" x1="332.87" y1="53.5" x2="17.57" y2="53.5"></line></g>
-                                </svg>
+                        <div class="col-lg-8 col-md-12 pt-lg-0 pt-5">
+                            <div class="images-parallax-mixed">
+                            
+                                <div class="section-title--back dotted--back inverse">
+                                    <svg id="Layer_01" data-name="Layer 01" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 348.5 436">
+                                        <defs>
+                                            <linearGradient id="linear-gradient" x1="9.5" y1="73.5" x2="348.5" y2="73.5" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#4f4f4f"></stop>
+                                                <stop offset="0.64" stop-color="#4f4f4f" stop-opacity="0.32"></stop>
+                                                <stop offset="1" stop-color="#4f4f4f" stop-opacity="0"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="linear-gradient-5" y1="93.5" y2="93.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-9" y1="113.5" y2="113.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-13" y1="133.5" y2="133.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-17" y1="173.5" y2="173.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-21" y1="153.5" y2="153.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-25" y1="193.5" y2="193.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-29" y1="253.5" y2="253.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-33" y1="313.5" y2="313.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-37" y1="273.5" y2="273.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-41" y1="213.5" y2="213.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-45" y1="333.5" y2="333.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-49" y1="353.5" y2="353.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-53" y1="373.5" y2="373.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-57" y1="393.5" y2="393.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-61" y1="413.5" y2="413.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-65" y1="232.5" y2="232.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-69" y1="293.5" y2="293.5" xlinkHref="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-73" y1="53.5" y2="53.5" xlinkHref="#linear-gradient"></linearGradient>
+                                        </defs>
+                                        <circle class="dotted01-1" cx="52" cy="6" r="6"></circle>
+                                        <circle class="dotted01-2" cx="139" cy="430" r="6"></circle>
+                                        <circle class="dotted01-3" cx="10" cy="51" r="10"></circle>
+                                        <g id="Layer_2" data-name="Layer 2" style={{opacity:0.5}}>
+                                        <polyline class="dotted01-4" points="10 73.5 9.5 73.5 10 73.5"></polyline>
+                                        <line class="dotted01-5" x1="25.13" y1="73.5" x2="340.43" y2="73.5"></line>
+                                        <polyline class="dotted01-4" points="348 73.5 348.5 73.5 348 73.5"></polyline>
+                                        <line class="dotted01-5" x1="332.87" y1="73.5" x2="17.57" y2="73.5"></line>
+                                        <polyline class="dotted01-6" points="10 93.5 9.5 93.5 10 93.5"></polyline>
+                                        <line class="dotted01-7" x1="25.13" y1="93.5" x2="340.43" y2="93.5"></line>
+                                        <polyline class="dotted01-6" points="348 93.5 348.5 93.5 348 93.5"></polyline>
+                                        <line class="dotted01-7" x1="332.87" y1="93.5" x2="17.57" y2="93.5"></line>
+                                        <polyline class="dotted01-8" points="10 113.5 9.5 113.5 10 113.5"></polyline>
+                                        <line class="dotted01-9" x1="25.13" y1="113.5" x2="340.43" y2="113.5"></line>
+                                        <polyline class="dotted01-8" points="348 113.5 348.5 113.5 348 113.5"></polyline>
+                                        <line class="dotted01-9" x1="332.87" y1="113.5" x2="17.57" y2="113.5"></line>
+                                        <polyline class="dotted01-10" points="10 133.5 9.5 133.5 10 133.5"></polyline>
+                                        <line class="dotted01-11" x1="25.13" y1="133.5" x2="340.43" y2="133.5"></line>
+                                        <polyline class="dotted01-10" points="348 133.5 348.5 133.5 348 133.5"></polyline>
+                                        <line class="dotted01-11" x1="332.87" y1="133.5" x2="17.57" y2="133.5"></line>
+                                        <polyline class="dotted01-12" points="10 173.5 9.5 173.5 10 173.5"></polyline>
+                                        <line class="dotted01-13" x1="25.13" y1="173.5" x2="340.43" y2="173.5"></line>
+                                        <polyline class="dotted01-12" points="348 173.5 348.5 173.5 348 173.5"></polyline>
+                                        <line class="dotted01-13" x1="332.87" y1="173.5" x2="17.57" y2="173.5"></line>
+                                        <polyline class="dotted01-14" points="10 153.5 9.5 153.5 10 153.5"></polyline>
+                                        <line class="dotted01-15" x1="25.13" y1="153.5" x2="340.43" y2="153.5"></line>
+                                        <polyline class="dotted01-14" points="348 153.5 348.5 153.5 348 153.5"></polyline>
+                                        <line class="dotted01-15" x1="332.87" y1="153.5" x2="17.57" y2="153.5"></line>
+                                        <polyline class="dotted01-16" points="10 193.5 9.5 193.5 10 193.5"></polyline>
+                                        <line class="dotted01-17" x1="25.13" y1="193.5" x2="340.43" y2="193.5"></line>
+                                        <polyline class="dotted01-16" points="348 193.5 348.5 193.5 348 193.5"></polyline>
+                                        <line class="dotted01-17" x1="332.87" y1="193.5" x2="17.57" y2="193.5"></line>
+                                        <polyline class="dotted01-18" points="10 253.5 9.5 253.5 10 253.5"></polyline>
+                                        <line class="dotted01-19" x1="25.13" y1="253.5" x2="340.43" y2="253.5"></line>
+                                        <polyline class="dotted01-18" points="348 253.5 348.5 253.5 348 253.5"></polyline>
+                                        <line class="dotted01-19" x1="332.87" y1="253.5" x2="17.57" y2="253.5"></line>
+                                        <polyline class="dotted01-20" points="10 313.5 9.5 313.5 10 313.5"></polyline>
+                                        <line class="dotted01-21" x1="25.13" y1="313.5" x2="340.43" y2="313.5"></line>
+                                        <polyline class="dotted01-20" points="348 313.5 348.5 313.5 348 313.5"></polyline>
+                                        <line class="dotted01-21" x1="332.87" y1="313.5" x2="17.57" y2="313.5"></line>
+                                        <polyline class="dotted01-22" points="10 273.5 9.5 273.5 10 273.5"></polyline>
+                                        <line class="dotted01-23" x1="25.13" y1="273.5" x2="340.43" y2="273.5"></line>
+                                        <polyline class="dotted01-22" points="348 273.5 348.5 273.5 348 273.5"></polyline>
+                                        <line class="dotted01-23" x1="332.87" y1="273.5" x2="17.57" y2="273.5"></line>
+                                        <polyline class="dotted01-24" points="10 213.5 9.5 213.5 10 213.5"></polyline>
+                                        <line class="dotted01-25" x1="25.13" y1="213.5" x2="340.43" y2="213.5"></line>
+                                        <polyline class="dotted01-24" points="348 213.5 348.5 213.5 348 213.5"></polyline>
+                                        <line class="dotted01-25" x1="332.87" y1="213.5" x2="17.57" y2="213.5"></line>
+                                        <polyline class="dotted01-26" points="10 333.5 9.5 333.5 10 333.5"></polyline>
+                                        <line class="dotted01-27" x1="25.13" y1="333.5" x2="340.43" y2="333.5"></line>
+                                        <polyline class="dotted01-26" points="348 333.5 348.5 333.5 348 333.5"></polyline>
+                                        <line class="dotted01-27" x1="332.87" y1="333.5" x2="17.57" y2="333.5"></line>
+                                        <polyline class="dotted01-28" points="10 353.5 9.5 353.5 10 353.5"></polyline>
+                                        <line class="dotted01-29" x1="25.13" y1="353.5" x2="340.43" y2="353.5"></line>
+                                        <polyline class="dotted01-28" points="348 353.5 348.5 353.5 348 353.5"></polyline>
+                                        <line class="dotted01-29" x1="332.87" y1="353.5" x2="17.57" y2="353.5"></line>
+                                        <polyline class="dotted01-30" points="10 373.5 9.5 373.5 10 373.5"></polyline>
+                                        <line class="dotted01-31" x1="25.13" y1="373.5" x2="340.43" y2="373.5"></line>
+                                        <polyline class="dotted01-30" points="348 373.5 348.5 373.5 348 373.5"></polyline>
+                                        <line class="dotted01-31" x1="332.87" y1="373.5" x2="17.57" y2="373.5"></line>
+                                        <polyline class="dotted01-32" points="10 393.5 9.5 393.5 10 393.5"></polyline>
+                                        <line class="dotted01-33" x1="25.13" y1="393.5" x2="340.43" y2="393.5"></line>
+                                        <polyline class="dotted01-32" points="348 393.5 348.5 393.5 348 393.5"></polyline>
+                                        <line class="dotted01-33" x1="332.87" y1="393.5" x2="17.57" y2="393.5"></line>
+                                        <polyline class="dotted01-34" points="10 413.5 9.5 413.5 10 413.5"></polyline>
+                                        <line class="dotted01-35" x1="25.13" y1="413.5" x2="340.43" y2="413.5"></line>
+                                        <polyline class="dotted01-34" points="348 413.5 348.5 413.5 348 413.5"></polyline>
+                                        <line class="dotted01-35" x1="332.87" y1="413.5" x2="17.57" y2="413.5"></line>
+                                        <polyline class="dotted01-36" points="10 232.5 9.5 232.5 10 232.5"></polyline>
+                                        <line class="dotted01-37" x1="25.13" y1="232.5" x2="340.43" y2="232.5"></line>
+                                        <polyline class="dotted01-36" points="348 232.5 348.5 232.5 348 232.5"></polyline>
+                                        <line class="dotted01-37" x1="332.87" y1="232.5" x2="17.57" y2="232.5"></line>
+                                        <polyline class="dotted01-38" points="10 293.5 9.5 293.5 10 293.5"></polyline>
+                                        <line class="dotted01-39" x1="25.13" y1="293.5" x2="340.43" y2="293.5"></line>
+                                        <polyline class="dotted01-38" points="348 293.5 348.5 293.5 348 293.5"></polyline>
+                                        <line class="dotted01-39" x1="332.87" y1="293.5" x2="17.57" y2="293.5"></line><polyline class="dotted01-40" points="10 53.5 9.5 53.5 10 53.5"></polyline><line class="dotted01-41" x1="25.13" y1="53.5" x2="340.43" y2="53.5"></line><polyline class="dotted01-40" points="348 53.5 348.5 53.5 348 53.5"></polyline><line class="dotted01-41" x1="332.87" y1="53.5" x2="17.57" y2="53.5"></line></g>
+                                    </svg>
+                                </div>
+                                <img src={meninasmartphone.src} class="img-fluid images-parallax-mixed-first skrollable loading_src skrollable-between" alt="Image Description" data-center="transform:translate(0,0px);opacity: 1" data-500-center="transform:translate(0,200px);opacity: 0.3" data-was-processed="true" style={{transform: 'translate(0px, 42.4px)', opacity: 0.8516}}/>
+                                <img src={menina.src} class="img-fluid images-parallax-mixed-last skrollable loading_src skrollable-between" alt="Image Description" data-center="transform:translate(0,0px);opacity: 1" data-500-center="transform:translate(0,100px);opacity: 0.3" data-was-processed="true" style={{transform: 'translate(0px, 5.2px)', opacity: 0.9636}}/>
                             </div>
-                            <img src={meninasmartphone.src} class="img-fluid images-parallax-mixed-first skrollable loading_src skrollable-between" alt="Image Description" data-center="transform:translate(0,0px);opacity: 1" data-500-center="transform:translate(0,200px);opacity: 0.3" data-was-processed="true" style={{transform: 'translate(0px, 42.4px)', opacity: 0.8516}}/>
-                            <img src={menina.src} class="img-fluid images-parallax-mixed-last skrollable loading_src skrollable-between" alt="Image Description" data-center="transform:translate(0,0px);opacity: 1" data-500-center="transform:translate(0,100px);opacity: 0.3" data-was-processed="true" style={{transform: 'translate(0px, 5.2px)', opacity: 0.9636}}/>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 126" class="section-bottom-angled-border">
-            <polygon points="0 126 1920 126 1920 59 0 0 0 126" style={{fill: '#fff'}}></polygon>
-        </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 126" class="section-bottom-angled-border">
+                <polygon points="0 126 1920 126 1920 59 0 0 0 126" style={{fill: '#fff'}}></polygon>
+            </svg>
         </section>
     );
 }
@@ -667,13 +667,13 @@ function FeaturesNew(){
                                     <svg class="fill-light-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 319.16 316.41" style={{fill:'rgba(238, 238, 238, 0.2)'}}>
                                         <path d="M1044,515c0,127-160,180-228.5,133.5C744.9,600.58,712.7,538.36,729,461,780,219,1044,431,1044,515Z" transform="translate(-724.84 -348.73)"></path>
                                     </svg>
-                                    <i class="icon-calendar"></i>
+                                    <i class="icon-handshake-1"></i>
                                 </figure>
                                 <div class="icon-box--body">
                                     <h3 class="icon-box--title font-md text-white">
                                         integração de dados para equipes multidisciplinares
                                     </h3>
-                                    <p class="mt-3 font-weight-light font-sm text-light-white">O sistema integra todos os profissioanis da clínica. Terapeutas visualizam a ficha do paciente que elas tem atendimento marcado em comum. Na ficha do paciente consta as orientações parentais, o plano de tratamento, relatórios, exames e anamnese. A comunicação da equipe fica facilitada, porém cada terapeuta tem acesso exclusivo às suas evoluções diárias mantendo o sigilo necessário.</p>
+                                    <p class="mt-3 font-weight-light font-sm text-light-white">O sistema integra todos os profissionais da clínica. Terapeutas visualizam a ficha do paciente que elas tem atendimento marcado em comum. Na ficha do paciente consta as orientações parentais, o plano de tratamento, relatórios, exames e anamnese. A comunicação da equipe fica facilitada, porém cada terapeuta tem acesso exclusivo às suas evoluções diárias mantendo o sigilo necessário.</p>
                                 </div>
                             </div>
                         </div>                
@@ -704,8 +704,13 @@ export default function Home() {
     return (
         <div >
             <Head>
+                <meta charSet="utf-8" />
+                <meta name="language" content="pt-BR" />
                 <title>CAREFLY - Otimizamos seu tempo para que você possa voar.</title>
-                <meta name="description" content="Generated by create next app" />
+                <meta name="description" content="Agenda, evolução por consulta, cadastro de paciente, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações parentais." />
+                <meta name="robots" content="index" />
+                <meta name="author" content="carefly" />
+                <meta name="keywords" content="Agenda, evolução por consulta, cadastro de paciente, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações parentais."></meta>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
