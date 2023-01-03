@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import grafico from '../assets/grafico.png';
 import fichapaciente from '../assets/fichapaciente.png';
 import cadastropaciente from '../assets/cadastropaciente.png';
@@ -14,12 +14,33 @@ import menina from '../assets/meninalaptop.jpg'
 import meninasmartphone from '../assets/meninasmartphone.jpg'
 
 function Header(){
+
+    const [novo,setNovo] = useState();
+
+    useEffect(() => {
+      
+        function click(ev) {
+
+            if(ev.srcElement.closest('#novo') == null){
+                setNovo(false);
+            }
+        }
+
+        if(novo){
+            window.addEventListener('click',click,false);  
+            return () => {
+                window.removeEventListener('click',click,false);
+            };
+        }           
+       
+    }, [novo]);
+
     return(
         <header className="header">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="header-nav w-100">
-                        <nav className="navbar navbar-light navbar-expand-lg has-mega-menu-advanced">                            
+                        <nav className="navbar navbar-light navbar-expand-lg has-mega-menu-advanced" id="novo">                            
                             <div className='navbar-brand header-brand'>
                                 <Image
                                     className="header-logo img-fluid loading_src"
@@ -29,7 +50,7 @@ function Header(){
                                     height={250}
                                 />
                             </div>                            
-                            <div className="header-menu collapse navbar-collapse">
+                            <div className={"header-menu collapse navbar-collapse "+(novo ? "show":"")}>
                                 <ul className="navbar-nav mr-auto">                                    
                                     <li className="nav-item dropdown mega-menu-advanced-wrapper">
                                         <a className="nav-link" href="#main" id="homelink" >
@@ -46,17 +67,21 @@ function Header(){
                                             Preços e planos
                                         </a>                                        
                                     </li>
+                                    {novo && <li className="nav-item dropdown mega-menu-advanced-wrapper">
+                                        <a href="https://carefly.app" rel="noreferrer" target="_blank" className=" nav-link btn btn-global btn-curved btn-overlay  d-lg-block">
+                                            Entrar
+                                        </a>                                         
+                                    </li>}
                                 </ul>
                             </div>                            
                             <div className="header-btns">
                                 <nav className="header-nav-btns">
-                                    <ul className="list-inline m-0">
-                                      
+                                    <ul className="list-inline m-0">                                      
                                         <li className="list-inline-item">
                                             <a href="https://carefly.app" rel="noreferrer" target="_blank" className="btn btn-global btn-curved btn-overlay d-none d-lg-block">
                                                Entrar
                                             </a>                                            
-                                            <button type="button" className="btn menu-toggle d-block d-lg-none" style={{padding:10}}><i className="icon--menu-line"></i></button>
+                                            <button type="button" className={"btn menu-toggle d-block d-lg-none "+(novo ? "toggled":"")} style={{padding:10}} onClick={() => setNovo(!novo)}><i className="icon--menu-line"></i></button>
                                         </li>
                                     </ul>
                                 </nav>
@@ -406,52 +431,52 @@ function Main(){
 function View(){
 
     return(
-        <section class="section section-middle-padding  bg-light-primary overflow-hidden section-angled-border" id="about">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 126" class="section-top-angled-border">
+        <section className="section section-middle-padding  bg-light-primary overflow-hidden section-angled-border" id="about">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 126" className="section-top-angled-border">
                 <polygon points="0 0 1920 0 1920 67 0 126 0 0" style={{fill: '#fff'}}></polygon>
             </svg>
-            <div class="container">
-                <div class="section-body">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 col-md-12 my-lg-0 my-5">
-                            <div class="section-title-wrap text-left section-title-wrap--left section-title-wrap-md-center mb-5 mb-lg-0">
-                                <div class="section-title-inner d-inline-block">
-                                    <h2 class="section-title">Carefly <span class="d-block font-weight-light" style={{textTransform:'none'}}>é pra mim?</span></h2>
+            <div className="container">
+                <div className="section-body">
+                    <div className="row align-items-center">
+                        <div className="col-lg-4 col-md-12 my-lg-0 my-5">
+                            <div className="section-title-wrap text-left section-title-wrap--left section-title-wrap-md-center mb-5 mb-lg-0">
+                                <div className="section-title-inner d-inline-block">
+                                    <h2 className="section-title">Carefly <span className="d-block font-weight-light" style={{textTransform:'none'}}>é pra mim?</span></h2>
                                 </div>
                                 <p style={{textTransform:'none'}}>Se você é profissional da saúde atuando com agendamento e preenchimento de prontuário, esse sistema é para você! O Carefly vem sendo desenvolvido por uma equipe de terapeutas e programadores para proporcionar a melhor experiência para esse público de profissionais da saúde que se preocupam com organização e seriedade sem deixar a segurança, praticidade e sustentabilidade de lado! </p>
-                                <div class="row mt-3">
-                                    <div class="col-md-4 col-sm-4 mb-3">
-                                        <div class="simple-icon-text">
-                                            <h3 class="simple-icon-text-title font-md mb-1"><i class="icon-business font-xxl"></i> 1439</h3>
-                                            <p class="font-regular font-weight-light">Atendimentos finalizados</p>
+                                <div className="row mt-3">
+                                    <div className="col-md-4 col-sm-4 mb-3">
+                                        <div className="simple-icon-text">
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-business font-xxl"></i> 1439</h3>
+                                            <p className="font-regular font-weight-light">Atendimentos finalizados</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 col-sm-4 mb-4">
-                                        <div class="simple-icon-text">
-                                            <h3 class="simple-icon-text-title font-md mb-1"><i class="icon-happy font-xxl"></i> 290</h3>
-                                            <p class="font-regular font-weight-light">Pacientes cadastrados</p>
+                                    <div className="col-md-4 col-sm-4 mb-4">
+                                        <div className="simple-icon-text">
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 290</h3>
+                                            <p className="font-regular font-weight-light">Pacientes cadastrados</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 col-sm-4 mb-4">
-                                        <div class="simple-icon-text">
-                                            <h3 class="simple-icon-text-title font-md mb-1"><i class="icon-happy font-xxl"></i> 40</h3>
-                                            <p class="font-regular font-weight-light">Terapeutas cadastrados</p>
+                                    <div className="col-md-4 col-sm-4 mb-4">
+                                        <div className="simple-icon-text">
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 40</h3>
+                                            <p className="font-regular font-weight-light">Terapeutas cadastrados</p>
                                         </div>
                                     </div>
                                 </div>
                             
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-12 pt-lg-0 pt-5">
-                            <div class="images-parallax-mixed">
+                        <div className="col-lg-8 col-md-12 pt-lg-0 pt-5">
+                            <div className="images-parallax-mixed">
                             
-                                <div class="section-title--back dotted--back inverse">
+                                <div className="section-title--back dotted--back inverse">
                                     <svg id="Layer_01" data-name="Layer 01" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 348.5 436">
                                         <defs>
                                             <linearGradient id="linear-gradient" x1="9.5" y1="73.5" x2="348.5" y2="73.5" gradientUnits="userSpaceOnUse">
-                                                <stop offset="0" stop-color="#4f4f4f"></stop>
-                                                <stop offset="0.64" stop-color="#4f4f4f" stop-opacity="0.32"></stop>
-                                                <stop offset="1" stop-color="#4f4f4f" stop-opacity="0"></stop>
+                                                <stop offset="0" stopColor="#4f4f4f"></stop>
+                                                <stop offset="0.64" stopColor="#4f4f4f" stopOpacity="0.32"></stop>
+                                                <stop offset="1" stopColor="#4f4f4f" stopOpacity="0"></stop>
                                             </linearGradient>
                                             <linearGradient id="linear-gradient-5" y1="93.5" y2="93.5" xlinkHref="#linear-gradient"></linearGradient>
                                             <linearGradient id="linear-gradient-9" y1="113.5" y2="113.5" xlinkHref="#linear-gradient"></linearGradient>
@@ -472,92 +497,92 @@ function View(){
                                             <linearGradient id="linear-gradient-69" y1="293.5" y2="293.5" xlinkHref="#linear-gradient"></linearGradient>
                                             <linearGradient id="linear-gradient-73" y1="53.5" y2="53.5" xlinkHref="#linear-gradient"></linearGradient>
                                         </defs>
-                                        <circle class="dotted01-1" cx="52" cy="6" r="6"></circle>
-                                        <circle class="dotted01-2" cx="139" cy="430" r="6"></circle>
-                                        <circle class="dotted01-3" cx="10" cy="51" r="10"></circle>
+                                        <circle className="dotted01-1" cx="52" cy="6" r="6"></circle>
+                                        <circle className="dotted01-2" cx="139" cy="430" r="6"></circle>
+                                        <circle className="dotted01-3" cx="10" cy="51" r="10"></circle>
                                         <g id="Layer_2" data-name="Layer 2" style={{opacity:0.5}}>
-                                        <polyline class="dotted01-4" points="10 73.5 9.5 73.5 10 73.5"></polyline>
-                                        <line class="dotted01-5" x1="25.13" y1="73.5" x2="340.43" y2="73.5"></line>
-                                        <polyline class="dotted01-4" points="348 73.5 348.5 73.5 348 73.5"></polyline>
-                                        <line class="dotted01-5" x1="332.87" y1="73.5" x2="17.57" y2="73.5"></line>
-                                        <polyline class="dotted01-6" points="10 93.5 9.5 93.5 10 93.5"></polyline>
-                                        <line class="dotted01-7" x1="25.13" y1="93.5" x2="340.43" y2="93.5"></line>
-                                        <polyline class="dotted01-6" points="348 93.5 348.5 93.5 348 93.5"></polyline>
-                                        <line class="dotted01-7" x1="332.87" y1="93.5" x2="17.57" y2="93.5"></line>
-                                        <polyline class="dotted01-8" points="10 113.5 9.5 113.5 10 113.5"></polyline>
-                                        <line class="dotted01-9" x1="25.13" y1="113.5" x2="340.43" y2="113.5"></line>
-                                        <polyline class="dotted01-8" points="348 113.5 348.5 113.5 348 113.5"></polyline>
-                                        <line class="dotted01-9" x1="332.87" y1="113.5" x2="17.57" y2="113.5"></line>
-                                        <polyline class="dotted01-10" points="10 133.5 9.5 133.5 10 133.5"></polyline>
-                                        <line class="dotted01-11" x1="25.13" y1="133.5" x2="340.43" y2="133.5"></line>
-                                        <polyline class="dotted01-10" points="348 133.5 348.5 133.5 348 133.5"></polyline>
-                                        <line class="dotted01-11" x1="332.87" y1="133.5" x2="17.57" y2="133.5"></line>
-                                        <polyline class="dotted01-12" points="10 173.5 9.5 173.5 10 173.5"></polyline>
-                                        <line class="dotted01-13" x1="25.13" y1="173.5" x2="340.43" y2="173.5"></line>
-                                        <polyline class="dotted01-12" points="348 173.5 348.5 173.5 348 173.5"></polyline>
-                                        <line class="dotted01-13" x1="332.87" y1="173.5" x2="17.57" y2="173.5"></line>
-                                        <polyline class="dotted01-14" points="10 153.5 9.5 153.5 10 153.5"></polyline>
-                                        <line class="dotted01-15" x1="25.13" y1="153.5" x2="340.43" y2="153.5"></line>
-                                        <polyline class="dotted01-14" points="348 153.5 348.5 153.5 348 153.5"></polyline>
-                                        <line class="dotted01-15" x1="332.87" y1="153.5" x2="17.57" y2="153.5"></line>
-                                        <polyline class="dotted01-16" points="10 193.5 9.5 193.5 10 193.5"></polyline>
-                                        <line class="dotted01-17" x1="25.13" y1="193.5" x2="340.43" y2="193.5"></line>
-                                        <polyline class="dotted01-16" points="348 193.5 348.5 193.5 348 193.5"></polyline>
-                                        <line class="dotted01-17" x1="332.87" y1="193.5" x2="17.57" y2="193.5"></line>
-                                        <polyline class="dotted01-18" points="10 253.5 9.5 253.5 10 253.5"></polyline>
-                                        <line class="dotted01-19" x1="25.13" y1="253.5" x2="340.43" y2="253.5"></line>
-                                        <polyline class="dotted01-18" points="348 253.5 348.5 253.5 348 253.5"></polyline>
-                                        <line class="dotted01-19" x1="332.87" y1="253.5" x2="17.57" y2="253.5"></line>
-                                        <polyline class="dotted01-20" points="10 313.5 9.5 313.5 10 313.5"></polyline>
-                                        <line class="dotted01-21" x1="25.13" y1="313.5" x2="340.43" y2="313.5"></line>
-                                        <polyline class="dotted01-20" points="348 313.5 348.5 313.5 348 313.5"></polyline>
-                                        <line class="dotted01-21" x1="332.87" y1="313.5" x2="17.57" y2="313.5"></line>
-                                        <polyline class="dotted01-22" points="10 273.5 9.5 273.5 10 273.5"></polyline>
-                                        <line class="dotted01-23" x1="25.13" y1="273.5" x2="340.43" y2="273.5"></line>
-                                        <polyline class="dotted01-22" points="348 273.5 348.5 273.5 348 273.5"></polyline>
-                                        <line class="dotted01-23" x1="332.87" y1="273.5" x2="17.57" y2="273.5"></line>
-                                        <polyline class="dotted01-24" points="10 213.5 9.5 213.5 10 213.5"></polyline>
-                                        <line class="dotted01-25" x1="25.13" y1="213.5" x2="340.43" y2="213.5"></line>
-                                        <polyline class="dotted01-24" points="348 213.5 348.5 213.5 348 213.5"></polyline>
-                                        <line class="dotted01-25" x1="332.87" y1="213.5" x2="17.57" y2="213.5"></line>
-                                        <polyline class="dotted01-26" points="10 333.5 9.5 333.5 10 333.5"></polyline>
-                                        <line class="dotted01-27" x1="25.13" y1="333.5" x2="340.43" y2="333.5"></line>
-                                        <polyline class="dotted01-26" points="348 333.5 348.5 333.5 348 333.5"></polyline>
-                                        <line class="dotted01-27" x1="332.87" y1="333.5" x2="17.57" y2="333.5"></line>
-                                        <polyline class="dotted01-28" points="10 353.5 9.5 353.5 10 353.5"></polyline>
-                                        <line class="dotted01-29" x1="25.13" y1="353.5" x2="340.43" y2="353.5"></line>
-                                        <polyline class="dotted01-28" points="348 353.5 348.5 353.5 348 353.5"></polyline>
-                                        <line class="dotted01-29" x1="332.87" y1="353.5" x2="17.57" y2="353.5"></line>
-                                        <polyline class="dotted01-30" points="10 373.5 9.5 373.5 10 373.5"></polyline>
-                                        <line class="dotted01-31" x1="25.13" y1="373.5" x2="340.43" y2="373.5"></line>
-                                        <polyline class="dotted01-30" points="348 373.5 348.5 373.5 348 373.5"></polyline>
-                                        <line class="dotted01-31" x1="332.87" y1="373.5" x2="17.57" y2="373.5"></line>
-                                        <polyline class="dotted01-32" points="10 393.5 9.5 393.5 10 393.5"></polyline>
-                                        <line class="dotted01-33" x1="25.13" y1="393.5" x2="340.43" y2="393.5"></line>
-                                        <polyline class="dotted01-32" points="348 393.5 348.5 393.5 348 393.5"></polyline>
-                                        <line class="dotted01-33" x1="332.87" y1="393.5" x2="17.57" y2="393.5"></line>
-                                        <polyline class="dotted01-34" points="10 413.5 9.5 413.5 10 413.5"></polyline>
-                                        <line class="dotted01-35" x1="25.13" y1="413.5" x2="340.43" y2="413.5"></line>
-                                        <polyline class="dotted01-34" points="348 413.5 348.5 413.5 348 413.5"></polyline>
-                                        <line class="dotted01-35" x1="332.87" y1="413.5" x2="17.57" y2="413.5"></line>
-                                        <polyline class="dotted01-36" points="10 232.5 9.5 232.5 10 232.5"></polyline>
-                                        <line class="dotted01-37" x1="25.13" y1="232.5" x2="340.43" y2="232.5"></line>
-                                        <polyline class="dotted01-36" points="348 232.5 348.5 232.5 348 232.5"></polyline>
-                                        <line class="dotted01-37" x1="332.87" y1="232.5" x2="17.57" y2="232.5"></line>
-                                        <polyline class="dotted01-38" points="10 293.5 9.5 293.5 10 293.5"></polyline>
-                                        <line class="dotted01-39" x1="25.13" y1="293.5" x2="340.43" y2="293.5"></line>
-                                        <polyline class="dotted01-38" points="348 293.5 348.5 293.5 348 293.5"></polyline>
-                                        <line class="dotted01-39" x1="332.87" y1="293.5" x2="17.57" y2="293.5"></line><polyline class="dotted01-40" points="10 53.5 9.5 53.5 10 53.5"></polyline><line class="dotted01-41" x1="25.13" y1="53.5" x2="340.43" y2="53.5"></line><polyline class="dotted01-40" points="348 53.5 348.5 53.5 348 53.5"></polyline><line class="dotted01-41" x1="332.87" y1="53.5" x2="17.57" y2="53.5"></line></g>
+                                        <polyline className="dotted01-4" points="10 73.5 9.5 73.5 10 73.5"></polyline>
+                                        <line className="dotted01-5" x1="25.13" y1="73.5" x2="340.43" y2="73.5"></line>
+                                        <polyline className="dotted01-4" points="348 73.5 348.5 73.5 348 73.5"></polyline>
+                                        <line className="dotted01-5" x1="332.87" y1="73.5" x2="17.57" y2="73.5"></line>
+                                        <polyline className="dotted01-6" points="10 93.5 9.5 93.5 10 93.5"></polyline>
+                                        <line className="dotted01-7" x1="25.13" y1="93.5" x2="340.43" y2="93.5"></line>
+                                        <polyline className="dotted01-6" points="348 93.5 348.5 93.5 348 93.5"></polyline>
+                                        <line className="dotted01-7" x1="332.87" y1="93.5" x2="17.57" y2="93.5"></line>
+                                        <polyline className="dotted01-8" points="10 113.5 9.5 113.5 10 113.5"></polyline>
+                                        <line className="dotted01-9" x1="25.13" y1="113.5" x2="340.43" y2="113.5"></line>
+                                        <polyline className="dotted01-8" points="348 113.5 348.5 113.5 348 113.5"></polyline>
+                                        <line className="dotted01-9" x1="332.87" y1="113.5" x2="17.57" y2="113.5"></line>
+                                        <polyline className="dotted01-10" points="10 133.5 9.5 133.5 10 133.5"></polyline>
+                                        <line className="dotted01-11" x1="25.13" y1="133.5" x2="340.43" y2="133.5"></line>
+                                        <polyline className="dotted01-10" points="348 133.5 348.5 133.5 348 133.5"></polyline>
+                                        <line className="dotted01-11" x1="332.87" y1="133.5" x2="17.57" y2="133.5"></line>
+                                        <polyline className="dotted01-12" points="10 173.5 9.5 173.5 10 173.5"></polyline>
+                                        <line className="dotted01-13" x1="25.13" y1="173.5" x2="340.43" y2="173.5"></line>
+                                        <polyline className="dotted01-12" points="348 173.5 348.5 173.5 348 173.5"></polyline>
+                                        <line className="dotted01-13" x1="332.87" y1="173.5" x2="17.57" y2="173.5"></line>
+                                        <polyline className="dotted01-14" points="10 153.5 9.5 153.5 10 153.5"></polyline>
+                                        <line className="dotted01-15" x1="25.13" y1="153.5" x2="340.43" y2="153.5"></line>
+                                        <polyline className="dotted01-14" points="348 153.5 348.5 153.5 348 153.5"></polyline>
+                                        <line className="dotted01-15" x1="332.87" y1="153.5" x2="17.57" y2="153.5"></line>
+                                        <polyline className="dotted01-16" points="10 193.5 9.5 193.5 10 193.5"></polyline>
+                                        <line className="dotted01-17" x1="25.13" y1="193.5" x2="340.43" y2="193.5"></line>
+                                        <polyline className="dotted01-16" points="348 193.5 348.5 193.5 348 193.5"></polyline>
+                                        <line className="dotted01-17" x1="332.87" y1="193.5" x2="17.57" y2="193.5"></line>
+                                        <polyline className="dotted01-18" points="10 253.5 9.5 253.5 10 253.5"></polyline>
+                                        <line className="dotted01-19" x1="25.13" y1="253.5" x2="340.43" y2="253.5"></line>
+                                        <polyline className="dotted01-18" points="348 253.5 348.5 253.5 348 253.5"></polyline>
+                                        <line className="dotted01-19" x1="332.87" y1="253.5" x2="17.57" y2="253.5"></line>
+                                        <polyline className="dotted01-20" points="10 313.5 9.5 313.5 10 313.5"></polyline>
+                                        <line className="dotted01-21" x1="25.13" y1="313.5" x2="340.43" y2="313.5"></line>
+                                        <polyline className="dotted01-20" points="348 313.5 348.5 313.5 348 313.5"></polyline>
+                                        <line className="dotted01-21" x1="332.87" y1="313.5" x2="17.57" y2="313.5"></line>
+                                        <polyline className="dotted01-22" points="10 273.5 9.5 273.5 10 273.5"></polyline>
+                                        <line className="dotted01-23" x1="25.13" y1="273.5" x2="340.43" y2="273.5"></line>
+                                        <polyline className="dotted01-22" points="348 273.5 348.5 273.5 348 273.5"></polyline>
+                                        <line className="dotted01-23" x1="332.87" y1="273.5" x2="17.57" y2="273.5"></line>
+                                        <polyline className="dotted01-24" points="10 213.5 9.5 213.5 10 213.5"></polyline>
+                                        <line className="dotted01-25" x1="25.13" y1="213.5" x2="340.43" y2="213.5"></line>
+                                        <polyline className="dotted01-24" points="348 213.5 348.5 213.5 348 213.5"></polyline>
+                                        <line className="dotted01-25" x1="332.87" y1="213.5" x2="17.57" y2="213.5"></line>
+                                        <polyline className="dotted01-26" points="10 333.5 9.5 333.5 10 333.5"></polyline>
+                                        <line className="dotted01-27" x1="25.13" y1="333.5" x2="340.43" y2="333.5"></line>
+                                        <polyline className="dotted01-26" points="348 333.5 348.5 333.5 348 333.5"></polyline>
+                                        <line className="dotted01-27" x1="332.87" y1="333.5" x2="17.57" y2="333.5"></line>
+                                        <polyline className="dotted01-28" points="10 353.5 9.5 353.5 10 353.5"></polyline>
+                                        <line className="dotted01-29" x1="25.13" y1="353.5" x2="340.43" y2="353.5"></line>
+                                        <polyline className="dotted01-28" points="348 353.5 348.5 353.5 348 353.5"></polyline>
+                                        <line className="dotted01-29" x1="332.87" y1="353.5" x2="17.57" y2="353.5"></line>
+                                        <polyline className="dotted01-30" points="10 373.5 9.5 373.5 10 373.5"></polyline>
+                                        <line className="dotted01-31" x1="25.13" y1="373.5" x2="340.43" y2="373.5"></line>
+                                        <polyline className="dotted01-30" points="348 373.5 348.5 373.5 348 373.5"></polyline>
+                                        <line className="dotted01-31" x1="332.87" y1="373.5" x2="17.57" y2="373.5"></line>
+                                        <polyline className="dotted01-32" points="10 393.5 9.5 393.5 10 393.5"></polyline>
+                                        <line className="dotted01-33" x1="25.13" y1="393.5" x2="340.43" y2="393.5"></line>
+                                        <polyline className="dotted01-32" points="348 393.5 348.5 393.5 348 393.5"></polyline>
+                                        <line className="dotted01-33" x1="332.87" y1="393.5" x2="17.57" y2="393.5"></line>
+                                        <polyline className="dotted01-34" points="10 413.5 9.5 413.5 10 413.5"></polyline>
+                                        <line className="dotted01-35" x1="25.13" y1="413.5" x2="340.43" y2="413.5"></line>
+                                        <polyline className="dotted01-34" points="348 413.5 348.5 413.5 348 413.5"></polyline>
+                                        <line className="dotted01-35" x1="332.87" y1="413.5" x2="17.57" y2="413.5"></line>
+                                        <polyline className="dotted01-36" points="10 232.5 9.5 232.5 10 232.5"></polyline>
+                                        <line className="dotted01-37" x1="25.13" y1="232.5" x2="340.43" y2="232.5"></line>
+                                        <polyline className="dotted01-36" points="348 232.5 348.5 232.5 348 232.5"></polyline>
+                                        <line className="dotted01-37" x1="332.87" y1="232.5" x2="17.57" y2="232.5"></line>
+                                        <polyline className="dotted01-38" points="10 293.5 9.5 293.5 10 293.5"></polyline>
+                                        <line className="dotted01-39" x1="25.13" y1="293.5" x2="340.43" y2="293.5"></line>
+                                        <polyline className="dotted01-38" points="348 293.5 348.5 293.5 348 293.5"></polyline>
+                                        <line className="dotted01-39" x1="332.87" y1="293.5" x2="17.57" y2="293.5"></line><polyline className="dotted01-40" points="10 53.5 9.5 53.5 10 53.5"></polyline><line className="dotted01-41" x1="25.13" y1="53.5" x2="340.43" y2="53.5"></line><polyline className="dotted01-40" points="348 53.5 348.5 53.5 348 53.5"></polyline><line className="dotted01-41" x1="332.87" y1="53.5" x2="17.57" y2="53.5"></line></g>
                                     </svg>
                                 </div>
-                                <img src={meninasmartphone.src} class="img-fluid images-parallax-mixed-first skrollable loading_src skrollable-between" alt="Image Description" data-center="transform:translate(0,0px);opacity: 1" data-500-center="transform:translate(0,200px);opacity: 0.3" data-was-processed="true" style={{transform: 'translate(0px, 42.4px)', opacity: 0.8516}}/>
-                                <img src={menina.src} class="img-fluid images-parallax-mixed-last skrollable loading_src skrollable-between" alt="Image Description" data-center="transform:translate(0,0px);opacity: 1" data-500-center="transform:translate(0,100px);opacity: 0.3" data-was-processed="true" style={{transform: 'translate(0px, 5.2px)', opacity: 0.9636}}/>
+                                <img src={meninasmartphone.src} className="img-fluid images-parallax-mixed-first skrollable loading_src skrollable-between" alt="Image Description" data-center="transform:translate(0,0px);opacity: 1" data-500-center="transform:translate(0,200px);opacity: 0.3" data-was-processed="true" style={{transform: 'translate(0px, 42.4px)', opacity: 0.8516}}/>
+                                <img src={menina.src} className="img-fluid images-parallax-mixed-last skrollable loading_src skrollable-between" alt="Image Description" data-center="transform:translate(0,0px);opacity: 1" data-500-center="transform:translate(0,100px);opacity: 0.3" data-was-processed="true" style={{transform: 'translate(0px, 5.2px)', opacity: 0.9636}}/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 126" class="section-bottom-angled-border">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 126" className="section-bottom-angled-border">
                 <polygon points="0 126 1920 126 1920 59 0 0 0 126" style={{fill: '#fff'}}></polygon>
             </svg>
         </section>
@@ -567,33 +592,33 @@ function View(){
 function Features(){
 
     return(
-        <section class="section">       
-            <div class="hexagon-back hexagon-left">
-                <svg data-name="hexagon" class="hexagon-svg skrollable skrollable-between" viewBox="0 0 348.51 350" data-0="transform:rotate(0deg);" data-top="transform:rotate(360deg);" style={{transform: 'rotate(352.941deg)'}}>
+        <section className="section">       
+            <div className="hexagon-back hexagon-left">
+                <svg data-name="hexagon" className="hexagon-svg skrollable skrollable-between" viewBox="0 0 348.51 350" data-0="transform:rotate(0deg);" data-top="transform:rotate(360deg);" style={{transform: 'rotate(352.941deg)'}}>
                     <path d="M429.23,188.1l64.46,125a50,50,0,0,1,0,45.86l-64.46,125A50,50,0,0,1,384.77,511H265.23a50,50,0,0,1-44.46-27.1l-64.46-125a50,50,0,0,1,0-45.86l64.46-125A50,50,0,0,1,265.23,161H384.77A50,50,0,0,1,429.23,188.1Z" transform="translate(-150.74 -161)" style={{fill: '#4794fe',opacity: 0.3}}></path>
                     <path d="M404.81,237.74l39.43,75a50.08,50.08,0,0,1,0,46.58l-39.43,75A50,50,0,0,1,360.53,461H289.47a50,50,0,0,1-44.28-26.74l-39.43-75a50.08,50.08,0,0,1,0-46.58l39.43-75A50,50,0,0,1,289.47,211h71.06A50,50,0,0,1,404.81,237.74Z" transform="translate(-150.74 -161)" style={{fill: '#4794fe'}}></path>
                 </svg>
             </div>
-            <div class="container">
-                <div class="section-body">
-                    <div class="row align-items-center">
-                        <div class="col-md-7 mb-5 mb-md-0">
-                            <img src={agencyMarketing.src} alt="Image Description" class="img-fluid loading_src" data-was-processed="true" />
+            <div className="container">
+                <div className="section-body">
+                    <div className="row align-items-center">
+                        <div className="col-md-7 mb-5 mb-md-0">
+                            <img src={agencyMarketing.src} alt="Image Description" className="img-fluid loading_src" data-was-processed="true" />
                         </div>
-                        <div class="col-md-5">
-                            <div class="section-title-wrap text-left section-title-wrap--left section-title-wrap-md-center mb-5 mb-lg-0">
-                                <div class="section-title-inner d-inline-block">
-                                    <h2 class="section-title" style={{textTransform:'none'}}>O que você encontra no <span class="d-block font-weight-light">Carefly? </span></h2>
+                        <div className="col-md-5">
+                            <div className="section-title-wrap text-left section-title-wrap--left section-title-wrap-md-center mb-5 mb-lg-0">
+                                <div className="section-title-inner d-inline-block">
+                                    <h2 className="section-title" style={{textTransform:'none'}}>O que você encontra no <span className="d-block font-weight-light">Carefly? </span></h2>
                                 </div>
                                 <p style={{textTransform:'none'}}>Agenda, evolução por consulta, cadastro de paciente, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações parentais. Você também pode anexar documentos como exames e relatórios. Além disso, atualizações constantes com novas funcionalidades.</p>
-                                <div class="row mt-4">
-                                    <div class="col-6">
-                                        <div class="btn btn-circle btn-light-success mb-3 mx-auto mx-lg-0"><i class="icon-vector"></i></div>
-                                        <h3 class="font-md">Segurança</h3>                                        
+                                <div className="row mt-4">
+                                    <div className="col-6">
+                                        <div className="btn btn-circle btn-light-success mb-3 mx-auto mx-lg-0"><i className="icon-vector"></i></div>
+                                        <h3 className="font-md">Segurança</h3>                                        
                                     </div>
-                                    <div class="col-6">
-                                        <div class="btn btn-circle btn-light-primary mb-3 mx-auto mx-lg-0"><i class="icon-puzzle"></i></div>
-                                        <h3 class="font-md">Suporte</h3>                                       
+                                    <div className="col-6">
+                                        <div className="btn btn-circle btn-light-primary mb-3 mx-auto mx-lg-0"><i className="icon-puzzle"></i></div>
+                                        <h3 className="font-md">Suporte</h3>                                       
                                     </div>
                                 </div>
                             </div>
@@ -608,88 +633,88 @@ function Features(){
 function FeaturesNew(){
 
     return(
-        <section s class="section section-special section-special-has-video bg-gradient-success overlay-gradient-success section-more-padding lazy-back" data-src="assets/images/pictures/office-kind-of-collaboration.jpg" data-was-processed="true" style={{backgroundImage: 'url('+collaboration.src+')',marginTop:100,backgroundSize:'cover'}}>
-            <div class="section-background-svgs">      
-                <svg id="sp-up" data-name="section special up element" class="section-special-elem elem-up" viewBox="0 0 720 30.28">              
-                    <path class="spup-1" d="M144,143.72c35.42.3,220.4,1.84,270,1,4-.07,10.1-.2,18-1,42.72-4.32,46.64-12.53,72-12.72,24.93-.19,28.71,8.46,72,12.72,7.89.78,14,.92,18,1,49.52,1,234.63-.84,270-1v-27H144Z" transform="translate(-144 -114.72)"></path>
-                    <path class="spup-2" d="M144,142c35.42.3,220.4,1.84,270,1,4-.07,10.1-.2,18-1,42.72-4.32,46.64-16.81,72-17,24.93-.19,28.71,12.74,72,17,7.89.78,14,.92,18,1,49.52.95,234.63-.84,270-1V115H144Z" transform="translate(-144 -114.72)"></path>
-                    <path class="spup-3" d="M144,141.72c35.42.3,220.4,1.84,270,1,4-.07,10.1-.2,18-1,42.72-4.32,46.64-18.8,72-19,24.93-.19,28.71,14.74,72,19,7.89.78,14,.92,18,1,49.52,1,234.63-.84,270-1v-27H144Z" transform="translate(-144 -114.72)"></path>
+        <section s className="section section-special section-special-has-video bg-gradient-success overlay-gradient-success section-more-padding lazy-back" data-src="assets/images/pictures/office-kind-of-collaboration.jpg" data-was-processed="true" style={{backgroundImage: 'url('+collaboration.src+')',marginTop:100,backgroundSize:'cover'}}>
+            <div className="section-background-svgs">      
+                <svg id="sp-up" data-name="section special up element" className="section-special-elem elem-up" viewBox="0 0 720 30.28">              
+                    <path className="spup-1" d="M144,143.72c35.42.3,220.4,1.84,270,1,4-.07,10.1-.2,18-1,42.72-4.32,46.64-12.53,72-12.72,24.93-.19,28.71,8.46,72,12.72,7.89.78,14,.92,18,1,49.52,1,234.63-.84,270-1v-27H144Z" transform="translate(-144 -114.72)"></path>
+                    <path className="spup-2" d="M144,142c35.42.3,220.4,1.84,270,1,4-.07,10.1-.2,18-1,42.72-4.32,46.64-16.81,72-17,24.93-.19,28.71,12.74,72,17,7.89.78,14,.92,18,1,49.52.95,234.63-.84,270-1V115H144Z" transform="translate(-144 -114.72)"></path>
+                    <path className="spup-3" d="M144,141.72c35.42.3,220.4,1.84,270,1,4-.07,10.1-.2,18-1,42.72-4.32,46.64-18.8,72-19,24.93-.19,28.71,14.74,72,19,7.89.78,14,.92,18,1,49.52,1,234.63-.84,270-1v-27H144Z" transform="translate(-144 -114.72)"></path>
                 </svg> 
-                <svg id="sp-down" data-name="section special down element" class="section-special-elem elem-down" viewBox="0 0 720 45.96">
-                    <path class="spdown-1" d="M144,291.51c35.42.3,220.4,1.83,270,1,4-.07,10.1-.2,18-1,42.72-4.32,48.4-23.27,73.77-23.47,24.92-.19,26.94,19.21,70.23,23.47,7.89.78,14,.92,18,1,49.52.95,234.63-.84,270-1v17.28H144Z" transform="translate(-144 -268.04)"></path>
-                    <path class="spdown-2" d="M144,294.3c35.42.3,220.4,1.83,270,1,4-.07,10.1-.2,18-1,42.72-4.33,48.4-17.62,73.77-17.81C530.69,276.3,532.71,290,576,294.3c7.89.77,14,.92,18,1,49.52.95,234.63-.85,270-1v17.27H144Z" transform="translate(-144 -268.04)"></path>
-                    <path class="spdown-3" d="M144,296.72c35.42.3,220.4,1.84,270,1,4-.07,10.1-.2,18-1,42.72-4.32,47.64-13.8,73-14,24.93-.19,27.71,9.74,71,14,7.89.78,14,.92,18,1,49.52,1,234.63-.84,270-1V314H144Z" transform="translate(-144 -268.04)"></path>
+                <svg id="sp-down" data-name="section special down element" className="section-special-elem elem-down" viewBox="0 0 720 45.96">
+                    <path className="spdown-1" d="M144,291.51c35.42.3,220.4,1.83,270,1,4-.07,10.1-.2,18-1,42.72-4.32,48.4-23.27,73.77-23.47,24.92-.19,26.94,19.21,70.23,23.47,7.89.78,14,.92,18,1,49.52.95,234.63-.84,270-1v17.28H144Z" transform="translate(-144 -268.04)"></path>
+                    <path className="spdown-2" d="M144,294.3c35.42.3,220.4,1.83,270,1,4-.07,10.1-.2,18-1,42.72-4.33,48.4-17.62,73.77-17.81C530.69,276.3,532.71,290,576,294.3c7.89.77,14,.92,18,1,49.52.95,234.63-.85,270-1v17.27H144Z" transform="translate(-144 -268.04)"></path>
+                    <path className="spdown-3" d="M144,296.72c35.42.3,220.4,1.84,270,1,4-.07,10.1-.2,18-1,42.72-4.32,47.64-13.8,73-14,24.93-.19,27.71,9.74,71,14,7.89.78,14,.92,18,1,49.52,1,234.63-.84,270-1V314H144Z" transform="translate(-144 -268.04)"></path>
                 </svg>         
-                <svg id="grad-transparent-shape01" class="grad-transparent-shape" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 685.4 597.04" style={{top:'10%',left:'7%'}}>
+                <svg id="grad-transparent-shape01" className="grad-transparent-shape" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 685.4 597.04" style={{top:'10%',left:'7%'}}>
                     <defs>
                     <linearGradient id="linear-gradient01" x1="145.44" y1="367.72" x2="830.84" y2="367.72" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#fff"></stop>
-                        <stop offset="0.04" stop-color="#fff" stop-opacity="0.94"></stop>
-                        <stop offset="0.19" stop-color="#fff" stop-opacity="0.7"></stop>
-                        <stop offset="0.35" stop-color="#fff" stop-opacity="0.48"></stop>
-                        <stop offset="0.5" stop-color="#fff" stop-opacity="0.31"></stop>
-                        <stop offset="0.64" stop-color="#fff" stop-opacity="0.17"></stop>
-                        <stop offset="0.77" stop-color="#fff" stop-opacity="0.08"></stop>
-                        <stop offset="0.9" stop-color="#fff" stop-opacity="0.02"></stop>
-                        <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                        <stop offset="0" stopColor="#fff"></stop>
+                        <stop offset="0.04" stopColor="#fff" stopOpacity="0.94"></stop>
+                        <stop offset="0.19" stopColor="#fff" stopOpacity="0.7"></stop>
+                        <stop offset="0.35" stopColor="#fff" stopOpacity="0.48"></stop>
+                        <stop offset="0.5" stopColor="#fff" stopOpacity="0.31"></stop>
+                        <stop offset="0.64" stopColor="#fff" stopOpacity="0.17"></stop>
+                        <stop offset="0.77" stopColor="#fff" stopOpacity="0.08"></stop>
+                        <stop offset="0.9" stopColor="#fff" stopOpacity="0.02"></stop>
+                        <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
                     </linearGradient>
                     </defs>
-                    <path class="gts01-1" d="M384.5,71.5c164.37-15.62,316.39,49.24,392,171,11.67,18.79,91.8,152.29,33,276-64.2,135.08-249.27,164.3-372,140-111-22-242.23-101.84-280-239-6.09-22.13-38-138.08,36-240C260.67,87,366.1,73.55,384.5,71.5Z" transform="translate(-145.44 -69.2)"></path>
+                    <path className="gts01-1" d="M384.5,71.5c164.37-15.62,316.39,49.24,392,171,11.67,18.79,91.8,152.29,33,276-64.2,135.08-249.27,164.3-372,140-111-22-242.23-101.84-280-239-6.09-22.13-38-138.08,36-240C260.67,87,366.1,73.55,384.5,71.5Z" transform="translate(-145.44 -69.2)"></path>
                 </svg>
             </div>
 
-            <div class="container">
-                <div class="section-title-wrap text-center section-title-wrap--simple text-white mb-5">    
-                    <div class="section-title-inner">
-                        <span class="title-sep"></span>
-                        <h2 class="section-title" style={{textTransform:'none'}}>Outras <span class="d-block font-weight-light">funcionalidades.</span></h2>
+            <div className="container">
+                <div className="section-title-wrap text-center section-title-wrap--simple text-white mb-5">    
+                    <div className="section-title-inner">
+                        <span className="title-sep"></span>
+                        <h2 className="section-title" style={{textTransform:'none'}}>Outras <span className="d-block font-weight-light">funcionalidades.</span></h2>
                     </div>            
                 </div>
-                <div class="section-body">            
-                    <div class="row text-center">                
-                        <div class="col-md-4 col-sm-6 col-12 mb-5">
-                            <div class="icon-box">
-                                <figure class="icon-box--icon text-white icon-box--customshape mb-4 mx-auto">
-                                    <svg class="fill-light-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.88 300.36" style={{fill:'rgba(238, 238, 238, 0.2)'}}>
+                <div className="section-body">            
+                    <div className="row text-center">                
+                        <div className="col-md-4 col-sm-6 col-12 mb-5">
+                            <div className="icon-box">
+                                <figure className="icon-box--icon text-white icon-box--customshape mb-4 mx-auto">
+                                    <svg className="fill-light-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.88 300.36" style={{fill:'rgba(238, 238, 238, 0.2)'}}>
                                         <path d="M771.5,270.5c33.35-.23,60.9,29.78,63,56,2.87,35.84-43.07,47.93-41,84,2,34.52,45.06,40.54,49,75,4.08,35.61-36,80.66-76,85-59.87,6.49-128.69-77.32-121-156C649.94,369.1,700,271,771.5,270.5Z" transform="translate(-644.91 -270.5)"></path>
                                     </svg>
-                                    <i class="icon-document"></i>
+                                    <i className="icon-document"></i>
                                 </figure>
-                                <div class="icon-box--body">
-                                    <h3 class="icon-box--title font-md text-white">Anexo de documentos</h3>
-                                    <p class="mt-3 font-weight-light font-sm text-light-white">Espaço físico para guardar prontuários pode ser um problema! Você não precisa mais juntar papel! Escaneie documentos e exames pelo celular e anexe no cadastro do paciente. Acesse de qualquer lugar sem carregar papel! Faça download e imprima, se precisar!</p>
+                                <div className="icon-box--body">
+                                    <h3 className="icon-box--title font-md text-white">Anexo de documentos</h3>
+                                    <p className="mt-3 font-weight-light font-sm text-light-white">Espaço físico para guardar prontuários pode ser um problema! Você não precisa mais juntar papel! Escaneie documentos e exames pelo celular e anexe no cadastro do paciente. Acesse de qualquer lugar sem carregar papel! Faça download e imprima, se precisar!</p>
                                 </div>
                             </div>
                         </div>                
-                        <div class="col-md-4 col-sm-6 col-12 mb-5">
-                            <div class="icon-box">
-                                <figure class="icon-box--icon text-white icon-box--customshape mb-4 mx-auto">
-                                    <svg class="fill-light-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 319.16 316.41" style={{fill:'rgba(238, 238, 238, 0.2)'}}>
+                        <div className="col-md-4 col-sm-6 col-12 mb-5">
+                            <div className="icon-box">
+                                <figure className="icon-box--icon text-white icon-box--customshape mb-4 mx-auto">
+                                    <svg className="fill-light-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 319.16 316.41" style={{fill:'rgba(238, 238, 238, 0.2)'}}>
                                         <path d="M1044,515c0,127-160,180-228.5,133.5C744.9,600.58,712.7,538.36,729,461,780,219,1044,431,1044,515Z" transform="translate(-724.84 -348.73)"></path>
                                     </svg>
-                                    <i class="icon-handshake-1"></i>
+                                    <i className="icon-handshake-1"></i>
                                 </figure>
-                                <div class="icon-box--body">
-                                    <h3 class="icon-box--title font-md text-white">
+                                <div className="icon-box--body">
+                                    <h3 className="icon-box--title font-md text-white">
                                         integração de dados para equipes multidisciplinares
                                     </h3>
-                                    <p class="mt-3 font-weight-light font-sm text-light-white">O sistema integra todos os profissionais da clínica. Terapeutas visualizam a ficha do paciente que elas tem atendimento marcado em comum. Na ficha do paciente consta as orientações parentais, o plano de tratamento, relatórios, exames e anamnese. A comunicação da equipe fica facilitada, porém cada terapeuta tem acesso exclusivo às suas evoluções diárias mantendo o sigilo necessário.</p>
+                                    <p className="mt-3 font-weight-light font-sm text-light-white">O sistema integra todos os profissionais da clínica. Terapeutas visualizam a ficha do paciente que elas tem atendimento marcado em comum. Na ficha do paciente consta as orientações parentais, o plano de tratamento, relatórios, exames e anamnese. A comunicação da equipe fica facilitada, porém cada terapeuta tem acesso exclusivo às suas evoluções diárias mantendo o sigilo necessário.</p>
                                 </div>
                             </div>
                         </div>                
-                        <div class="col-md-4 col-sm-6 col-12 mb-5">
-                            <div class="icon-box">
-                                <figure class="icon-box--icon text-white icon-box--customshape mb-4 mx-auto">
-                                    <svg class="fill-light-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 319.16 316.41" style={{fill:'rgba(238, 238, 238, 0.2)'}}>
+                        <div className="col-md-4 col-sm-6 col-12 mb-5">
+                            <div className="icon-box">
+                                <figure className="icon-box--icon text-white icon-box--customshape mb-4 mx-auto">
+                                    <svg className="fill-light-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 319.16 316.41" style={{fill:'rgba(238, 238, 238, 0.2)'}}>
                                         <path d="M1044,515c0,127-160,180-228.5,133.5C744.9,600.58,712.7,538.36,729,461,780,219,1044,431,1044,515Z" transform="translate(-724.84 -348.73)"></path>
                                     </svg>
-                                    <i class="icon-plus"></i>
+                                    <i className="icon-plus"></i>
                                 </figure>
-                                <div class="icon-box--body">
-                                    <h3 class="icon-box--title font-md text-white">
+                                <div className="icon-box--body">
+                                    <h3 className="icon-box--title font-md text-white">
                                         Cadastro automático de atendimento
                                     </h3>
-                                    <p class="mt-3 font-weight-light font-sm text-light-white">Você pode selecionar a opção de tornar o agendamento recorrente para os casos de atendimento com horário reservado semanalmente. Nao precisa agendar toda semana.</p>
+                                    <p className="mt-3 font-weight-light font-sm text-light-white">Você pode selecionar a opção de tornar o agendamento recorrente para os casos de atendimento com horário reservado semanalmente. Nao precisa agendar toda semana.</p>
                                 </div>
                             </div>
                         </div>
