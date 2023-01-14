@@ -304,7 +304,9 @@ function Plan(){
                                 <li style={{fontWeight:'bold'}}><b>Tudo do plano Básico +</b></li>
                                 <li>Contas a pagar</li>
                                 <li>Contas a receber</li>
-                                <li>Relatório de pagamento</li>                            
+                                <li>Relatório de pagamento</li>   
+                                <li>Relatório de inadimplência</li>   
+                                <li>Relatório de adimplente</li>                            
                             </ul>
                             <div className="price-bottom same-height" style={{height: 112.797}}>
                                 {
@@ -447,19 +449,19 @@ function View(){
                                 <div className="row mt-3">
                                     <div className="col-md-4 col-sm-4 mb-3">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-business font-xxl"></i> 1731</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-business font-xxl"></i> 2114</h3>
                                             <p className="font-regular font-weight-light">Atendimentos finalizados</p>
                                         </div>
                                     </div>
                                     <div className="col-md-4 col-sm-4 mb-4">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 352</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 400</h3>
                                             <p className="font-regular font-weight-light">Pacientes cadastrados</p>
                                         </div>
                                     </div>
                                     <div className="col-md-4 col-sm-4 mb-4">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 56</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 63</h3>
                                             <p className="font-regular font-weight-light">Terapeutas cadastrados</p>
                                         </div>
                                     </div>
