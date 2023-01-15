@@ -287,7 +287,7 @@ function Plan(){
                                         <div className="price-table-price font-weight-bold font-lg" data-period="monthly">R$ 40,00 <small>/mês</small> <br/> </div>
                                     :
                                         <div className="price-table-price font-weight-bold font-lg" data-period="monthly">
-                                            R$ 420,00 <small>/mês</small>                                           
+                                            R$ 420,00 <small>/ano</small>                                           
                                         </div>
                                 }
                                 <small>por profissional</small>
@@ -314,7 +314,7 @@ function Plan(){
                                         <div className="price-table-price font-weight-bold font-lg" data-period="monthly">R$ 50,00 <small>/mês</small> <br/> </div>
                                     :
                                         <div className="price-table-price font-weight-bold font-lg" data-period="monthly">
-                                            R$ 540,00 <small>/mês</small>                                           
+                                            R$ 540,00 <small>/ano</small>                                           
                                         </div>
                                 }
                                 <small>por profissional</small>
@@ -449,19 +449,19 @@ function View(){
                                 <div className="row mt-3">
                                     <div className="col-md-4 col-sm-4 mb-3">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-business font-xxl"></i> 2114</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-business font-xxl"></i> 2123</h3>
                                             <p className="font-regular font-weight-light">Atendimentos finalizados</p>
                                         </div>
                                     </div>
                                     <div className="col-md-4 col-sm-4 mb-4">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 400</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 407</h3>
                                             <p className="font-regular font-weight-light">Pacientes cadastrados</p>
                                         </div>
                                     </div>
                                     <div className="col-md-4 col-sm-4 mb-4">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 63</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 80</h3>
                                             <p className="font-regular font-weight-light">Terapeutas cadastrados</p>
                                         </div>
                                     </div>
