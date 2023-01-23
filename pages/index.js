@@ -365,7 +365,7 @@ function Main(){
                 <div className="row align-items-lg-center">
                     <div className="col-xl-5 col-lg-6 col-md-6 col-12 hiro-text pl-md-5 pt-5 pt-md-0 text-md-left text-center">
                         <h1 className="hiro-title font-uxl font-xxxl-onMobile font-weight-medium mb-4">CAREFLY</h1>
-                        <p className="font-weight-light font-md font-regular-onMobile"> O sistema de gestão que nasce para revolucionar a administração do seu consultório ou clínica. Otimizamos seu tempo para que você possa voar!</p>
+                        <p className="font-weight-light font-md font-regular-onMobile"> Muito mais que um prontuário eletrônico! O Carefly é um sistema de gestão que nasce para revolucionar a administração do seu consultório ou clínica tanto em aspectos administrativos quanto clínicos. Otimizamos seu tempo para que você possa voar!</p>
                     </div>
                     <div className="col-xl-7 col-lg-6 col-md-6 col-sm-6 hiro-img d-none d-md-block">
                         <div className="preview-cards skrollable skrollable-before" data--100-top="transform:scale(1);opacity:1" data--300-top="transform:scale(0.95) ;opacity:0.3" style={{transform:'scale(1)',opacity:1}}>
@@ -445,7 +445,7 @@ function View(){
                                 <div className="section-title-inner d-inline-block">
                                     <h2 className="section-title">Carefly <span className="d-block font-weight-light" style={{textTransform:'none'}}>é pra mim?</span></h2>
                                 </div>
-                                <p style={{textTransform:'none'}}>Se você é profissional da saúde atuando com agendamento e preenchimento de prontuário, esse sistema é para você! O Carefly vem sendo desenvolvido por uma equipe de terapeutas e programadores para proporcionar a melhor experiência para esse público de profissionais da saúde que se preocupam com organização e seriedade sem deixar a segurança, praticidade e sustentabilidade de lado! </p>
+                                <p style={{textTransform:'none'}}>Se você é profissional da saúde atuando com agendamento, preenchimento de prontuário e administração de consultórios e clínicas, esse sistema é para você! O Carefly vem sendo desenvolvido por uma equipe de terapeutas e programadores para proporcionar a melhor experiência para esse público de profissionais da saúde que se preocupam com organização e seriedade sem deixar a segurança, praticidade e sustentabilidade de lado!</p>
                                 <div className="row mt-3">
                                     <div className="col-md-4 col-sm-4 mb-3">
                                         <div className="simple-icon-text">
@@ -612,7 +612,7 @@ function Features(){
                                 <div className="section-title-inner d-inline-block">
                                     <h2 className="section-title" style={{textTransform:'none'}}>O que você encontra no <span className="d-block font-weight-light">Carefly? </span></h2>
                                 </div>
-                                <p style={{textTransform:'none'}}>Agenda, evolução por consulta, cadastro de paciente, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações parentais. Você também pode anexar documentos como exames e relatórios. Além disso, atualizações constantes com novas funcionalidades.</p>
+                                <p style={{textTransform:'none'}}>Cadastro de pacientes, agenda, prontuário eletrônico completo com: evolução por consulta, registro de faltas com especificação do motivo, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações para casa. Você também pode anexar documentos como exames e relatórios. Além disso, atualizações constantes com novas funcionalidades. Em breve gestão financeira e terapia ABA!</p>
                                 <div className="row mt-4">
                                     <div className="col-6">
                                         <div className="btn btn-circle btn-light-success mb-3 mx-auto mx-lg-0"><i className="icon-vector"></i></div>
