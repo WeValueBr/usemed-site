@@ -8,6 +8,7 @@ import anamnese from '../assets/anamnese.png';
 import anamnesemobile from '../assets/anamnesemobile.png';
 import evolucao from '../assets/evolucao.png';
 import carefly from '../assets/images/carefly.png'
+import carefly2 from '../assets/images/carefly2.png'
 import agencyMarketing from '../assets/images/illustration/agency-marketing.svg'
 import collaboration from '../assets/images/pictures/office-kind-of-collaboration.jpg'
 import menina from '../assets/meninalaptop.jpg'
@@ -42,12 +43,12 @@ function Header(){
                     <div className="header-nav w-100">
                         <nav className="navbar navbar-light navbar-expand-lg has-mega-menu-advanced" id="novo">                            
                             <div className='navbar-brand header-brand'>
-                                <Image
+							<Image
                                     className="header-logo img-fluid loading_src"
                                     src={carefly.src}
                                     alt="logo"
-                                    width={700}
-                                    height={250}
+                                    width={40}
+                                    height={50}
                                 />
                             </div>                            
                             <div className={"header-menu collapse navbar-collapse "+(novo ? "show":"")}>
@@ -220,10 +221,10 @@ function Footer(){
                             <div className="footer-logo">                                
                                 <Image
                                     className="img-fluid loading_src"
-                                    src={carefly.src}
+                                    src={carefly2.src}
                                     alt="logo"
-                                    width={500}
-                                    height={200}
+                                    width={60}
+                                    height={70}
                                 />
                             </div>
                         </div>
@@ -449,19 +450,19 @@ function View(){
                                 <div className="row mt-3">
                                     <div className="col-md-4 col-sm-4 mb-3">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-business font-xxl"></i> 2123</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-business font-xxl"></i> 3668</h3>
                                             <p className="font-regular font-weight-light">Atendimentos finalizados</p>
                                         </div>
                                     </div>
                                     <div className="col-md-4 col-sm-4 mb-4">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 407</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 619</h3>
                                             <p className="font-regular font-weight-light">Pacientes cadastrados</p>
                                         </div>
                                     </div>
                                     <div className="col-md-4 col-sm-4 mb-4">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 80</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 119</h3>
                                             <p className="font-regular font-weight-light">Terapeutas cadastrados</p>
                                         </div>
                                     </div>
