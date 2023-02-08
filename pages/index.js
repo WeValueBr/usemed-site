@@ -9,6 +9,7 @@ import anamnesemobile from '../assets/anamnesemobile.png';
 import evolucao from '../assets/evolucao.png';
 import carefly from '../assets/images/carefly.png'
 import carefly2 from '../assets/images/carefly2.png'
+import favicon from '../assets/images/favicon.ico'
 import agencyMarketing from '../assets/images/illustration/agency-marketing.svg'
 import collaboration from '../assets/images/pictures/office-kind-of-collaboration.jpg'
 import menina from '../assets/meninalaptop.jpg'
@@ -739,7 +740,7 @@ export default function Home() {
                 <meta name="robots" content="index" />
                 <meta name="author" content="carefly" />
                 <meta name="keywords" content="Agenda, evolução por consulta, cadastro de paciente, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações parentais."></meta>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href={favicon.src} />
             </Head>
             <Header />
             <main className="content" id="main">
