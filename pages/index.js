@@ -70,7 +70,7 @@ function Header(){
                                         </a>                                        
                                     </li>
                                     {novo && <li className="nav-item dropdown mega-menu-advanced-wrapper">
-                                        <a href="https://carefly.app" rel="noreferrer" target="_blank" className=" nav-link btn btn-global btn-curved btn-overlay  d-lg-block">
+                                        <a href="https://app.wayfly.com.br" rel="noreferrer" target="_blank" className=" nav-link btn btn-global btn-curved btn-overlay  d-lg-block">
                                             Entrar
                                         </a>                                         
                                     </li>}
@@ -80,7 +80,7 @@ function Header(){
                                 <nav className="header-nav-btns">
                                     <ul className="list-inline m-0">                                      
                                         <li className="list-inline-item">
-                                            <a href="https://carefly.app" rel="noreferrer" target="_blank" className="btn btn-global btn-curved btn-overlay d-none d-lg-block">
+                                            <a href="https://app.wayfly.com.br" rel="noreferrer" target="_blank" className="btn btn-global btn-curved btn-overlay d-none d-lg-block">
                                                Entrar
                                             </a>                                            
                                             <button type="button" className={"btn menu-toggle d-block d-lg-none "+(novo ? "toggled":"")} style={{padding:10}} onClick={() => setNovo(!novo)}><i className="icon--menu-line"></i></button>
@@ -195,7 +195,7 @@ function Footer(){
                                         <div className="footer-contact-item media mb-3">
                                             <i className="icon-new-post align-self-center mr-3"></i>
                                             <div className="media-body">
-                                                comercial@carefly.com.br
+                                                suporte@wayfly.com.br
                                             </div>
                                         </div>
                                     </div>
@@ -210,7 +210,7 @@ function Footer(){
                                     <p>Siga-nos nas redes sociais.</p>
                                     <div className="footer-social">
                                         <ul className="list-inline social-list ">                                            
-                                            <li className="list-inline-item"><a href="https://www.instagram.com/carefly.com.br/" rel="noreferrer" target="_blank" ><i className="icon-instagram"></i></a></li>                                            
+                                            <li className="list-inline-item"><a href="https://www.instagram.com/wayfly.com.br/" rel="noreferrer" target="_blank" ><i className="icon-instagram"></i></a></li>
                                         </ul>
                                     </div>                            
                                 </div>
@@ -236,7 +236,7 @@ function Footer(){
                         </div>
                         
                         <div className="footer-copyright my-2 col-12">
-                            <p>Copyright © 2022 Todos os direitos reservados por <strong> Carefly.</strong></p>
+                            <p>Copyright © 2022 Todos os direitos reservados por <strong> Wayfly.</strong></p>
                         </div>
                     </div>
                 </div>
@@ -366,8 +366,8 @@ function Main(){
             <div className="container">
                 <div className="row align-items-lg-center">
                     <div className="col-xl-5 col-lg-6 col-md-6 col-12 hiro-text pl-md-5 pt-5 pt-md-0 text-md-left text-center">
-                        <h1 className="hiro-title font-uxl font-xxxl-onMobile font-weight-medium mb-4">CAREFLY</h1>
-                        <p className="font-weight-light font-md font-regular-onMobile"> Muito mais que um prontuário eletrônico! O Carefly é um sistema de gestão que nasce para revolucionar a administração do seu consultório ou clínica tanto em aspectos administrativos quanto clínicos. Otimizamos seu tempo para que você possa voar!</p>
+                        <h1 className="hiro-title font-uxl font-xxxl-onMobile font-weight-medium mb-4">WAYFLY</h1>
+                        <p className="font-weight-light font-md font-regular-onMobile"> Muito mais que um prontuário eletrônico! O Wayfly é um sistema de gestão que nasce para revolucionar a administração do seu consultório ou clínica tanto em aspectos administrativos quanto clínicos. Otimizamos seu tempo para que você possa voar!</p>
                     </div>
                     <div className="col-xl-7 col-lg-6 col-md-6 col-sm-6 hiro-img d-none d-md-block">
                         <div className="preview-cards skrollable skrollable-before" data--100-top="transform:scale(1);opacity:1" data--300-top="transform:scale(0.95) ;opacity:0.3" style={{transform:'scale(1)',opacity:1}}>
@@ -445,9 +445,9 @@ function View(){
                         <div className="col-lg-4 col-md-12 my-lg-0 my-5">
                             <div className="section-title-wrap text-left section-title-wrap--left section-title-wrap-md-center mb-5 mb-lg-0">
                                 <div className="section-title-inner d-inline-block">
-                                    <h2 className="section-title">Carefly <span className="d-block font-weight-light" style={{textTransform:'none'}}>é pra mim?</span></h2>
+                                    <h2 className="section-title">Wayfly <span className="d-block font-weight-light" style={{textTransform:'none'}}>é pra mim?</span></h2>
                                 </div>
-                                <p style={{textTransform:'none'}}>Se você é profissional da saúde atuando com agendamento, preenchimento de prontuário e administração de consultórios e clínicas, esse sistema é para você! O Carefly vem sendo desenvolvido por uma equipe de terapeutas e programadores para proporcionar a melhor experiência para esse público de profissionais da saúde que se preocupam com organização e seriedade sem deixar a segurança, praticidade e sustentabilidade de lado!</p>
+                                <p style={{textTransform:'none'}}>Se você é profissional da saúde atuando com agendamento, preenchimento de prontuário e administração de consultórios e clínicas, esse sistema é para você! O Wayfly vem sendo desenvolvido por uma equipe de terapeutas e programadores para proporcionar a melhor experiência para esse público de profissionais da saúde que se preocupam com organização e seriedade sem deixar a segurança, praticidade e sustentabilidade de lado!</p>
                                 <div className="row mt-3">
                                     <div className="col-md-4 col-sm-4 mb-3">
                                         <div className="simple-icon-text">
@@ -612,7 +612,7 @@ function Features(){
                         <div className="col-md-5">
                             <div className="section-title-wrap text-left section-title-wrap--left section-title-wrap-md-center mb-5 mb-lg-0">
                                 <div className="section-title-inner d-inline-block">
-                                    <h2 className="section-title" style={{textTransform:'none'}}>O que você encontra no <span className="d-block font-weight-light">Carefly? </span></h2>
+                                    <h2 className="section-title" style={{textTransform:'none'}}>O que você encontra no <span className="d-block font-weight-light">Wayfly? </span></h2>
                                 </div>
                                 <p style={{textTransform:'none'}}>Cadastro de pacientes, agenda, prontuário eletrônico completo com: evolução por consulta, registro de faltas com especificação do motivo, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações para casa. Você também pode anexar documentos como exames e relatórios. Além disso, atualizações constantes com novas funcionalidades. Em breve gestão financeira e terapia ABA!</p>
                                 <div className="row mt-4">
@@ -735,10 +735,10 @@ export default function Home() {
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="language" content="pt-BR" />
-                <title>CAREFLY - Otimizamos seu tempo para que você possa voar.</title>
+                <title>WAYFLY - Otimizamos seu tempo para que você possa voar.</title>
                 <meta name="description" content="Agenda, evolução por consulta, cadastro de paciente, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações parentais." />
                 <meta name="robots" content="index" />
-                <meta name="author" content="carefly" />
+                <meta name="author" content="wayfly" />
                 <meta name="keywords" content="Agenda, evolução por consulta, cadastro de paciente, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações parentais."></meta>
                 <link rel="icon" href={favicon.src} />
             </Head>
@@ -822,7 +822,7 @@ export default function Home() {
                                             <span className="title-sep-hr"></span>
                                             <h2 className="section-title text-left">Gráficos</h2>
                                         </div>
-                                        <p className="text-muted font-weight-light">O Carefly possibilita que o profissional ou administrador verifique o andamento dos atendimentos de acordo com o status: agendado, finalizado, falta com direito à reposição, falta sem direito à reposição, profissional desmarcou.</p>
+                                        <p className="text-muted font-weight-light">O Wayfly possibilita que o profissional ou administrador verifique o andamento dos atendimentos de acordo com o status: agendado, finalizado, falta com direito à reposição, falta sem direito à reposição, profissional desmarcou.</p>
                                     </div>
                                 </div>
                                 <div className="col-md-7 mt-5 mt-md-0">
@@ -908,7 +908,7 @@ export default function Home() {
                 <Plan />
 
                 <div style={{bottom: 20,display: 'block',position: 'fixed',right: 20,zIndex: 999,width: 60}}>
-                    <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5521990452839&amp;text=Olá, gostaria de informações sobre o sistema Carefly" >
+                    <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5521990452839&amp;text=Olá, gostaria de informações sobre o sistema Wayfly" >
                         <svg viewBox="0 0 60 60" fill="none">
                             <path d="M30 60C13.456 60 0 46.536 0 29.994 0 13.453 13.456 0 30 0s30 13.453 30 29.994C60 46.537 46.544 60 30 60z" fill="#00C52B"></path>
                             <path fillRule="evenodd" clipRule="evenodd" d="M30.564 13.5C21.979 13.5 15 20.703 15 29.554c0 3.119.86 6.111 2.484 8.704l-2.361 5.37a1.429 1.429 0 00.208 1.492c.264.322.642.497 1.029.497.123 0 .236-.02.359-.048l6.516-1.843a15.197 15.197 0 007.329 1.891c8.584 0 15.563-7.203 15.563-16.063 0-8.85-6.979-16.054-15.564-16.054zm0 29.31c-2.276 0-4.505-.624-6.47-1.803a1.32 1.32 0 00-1.048-.146l-4.259 1.208 1.483-3.372a1.46 1.46 0 00-.133-1.404 13.441 13.441 0 01-2.427-7.749c0-7.31 5.761-13.256 12.844-13.256 7.083 0 12.844 5.946 12.844 13.256.01 7.32-5.752 13.266-12.835 13.266z" fill="#fff"></path>
