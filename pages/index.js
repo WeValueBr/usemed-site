@@ -451,19 +451,19 @@ function View(){
                                 <div className="row mt-3">
                                     <div className="col-md-4 col-sm-4 mb-3">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-business font-xxl"></i> 3668</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-business font-xxl"></i> 5279</h3>
                                             <p className="font-regular font-weight-light">Atendimentos finalizados</p>
                                         </div>
                                     </div>
                                     <div className="col-md-4 col-sm-4 mb-4">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 619</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 715</h3>
                                             <p className="font-regular font-weight-light">Pacientes cadastrados</p>
                                         </div>
                                     </div>
                                     <div className="col-md-4 col-sm-4 mb-4">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 119</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-happy font-xxl"></i> 129</h3>
                                             <p className="font-regular font-weight-light">Terapeutas cadastrados</p>
                                         </div>
                                     </div>
@@ -735,8 +735,8 @@ export default function Home() {
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="language" content="pt-BR" />
-                <title>WAYFLY - Otimizamos seu tempo para que você possa voar.</title>
-                <meta name="description" content="Agenda, evolução por consulta, cadastro de paciente, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações parentais." />
+                <title>Wayfly - Otimizamos seu tempo para que você possa voar.</title>
+                <meta name="description" content="Agenda, evolução por consulta, cadastro de paciente, expediente de terapeutas, anamnese, área para registro do plano de tratamento e orientações parentais." />
                 <meta name="robots" content="index" />
                 <meta name="author" content="wayfly" />
                 <meta name="keywords" content="Agenda, evolução por consulta, cadastro de paciente, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações parentais."></meta>
