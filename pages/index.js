@@ -308,7 +308,7 @@ function Plan(){
                             </div>
                         </div>
                         <div className="price-table-item featured" data-plan="monthly">
-                            <span className="price-table-label bg-warning text-white">Em breve</span>
+
                             <i className="icon-aircraft"></i>
                             <h3 className="font-lg">Plus</h3>
                             <ul className="price-table-detail font-regular font-weight-light mt-3 mb-4">
@@ -330,7 +330,7 @@ function Plan(){
                                 }
                                 <small>por profissional</small>
                                 <div className="mt-3 text-center">
-                                    <a href="#" className="btn btn-success btn-curved btn-overlay disabled">Comece agora</a>
+                                    <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5521975336733&amp;text=Olá, gostaria de informações sobre o plano plus."  className="btn btn-success btn-curved btn-overlay">Comece agora</a>
                                 </div>
                             </div>
                         </div>
@@ -623,7 +623,7 @@ function Features(){
                                 <div className="section-title-inner d-inline-block">
                                     <h2 className="section-title" style={{textTransform:'none'}}>O que você encontra no <span className="d-block font-weight-light">Wayfly? </span></h2>
                                 </div>
-                                <p style={{textTransform:'none'}}>Cadastro de pacientes, agenda, prontuário eletrônico completo com: evolução por consulta, registro de faltas com especificação do motivo, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações para casa. Você também pode anexar documentos como exames e relatórios. Além disso, atualizações constantes com novas funcionalidades. Em breve gestão financeira e terapia ABA!</p>
+                                <p style={{textTransform:'none'}}>Cadastro de pacientes, agenda, prontuário eletrônico completo com: evolução por consulta, registro de faltas com especificação do motivo, expediente e terapeutas, anamnese, área para registro do plano de tratamento e orientações para casa. Você também pode anexar documentos como exames e relatórios. Além disso, atualizações constantes com novas funcionalidades. Em breve terapia ABA!</p>
                                 <div className="row mt-4">
                                     <div className="col-6">
                                         <div className="btn btn-circle btn-light-success mb-3 mx-auto mx-lg-0"><i className="icon-vector"></i></div>
