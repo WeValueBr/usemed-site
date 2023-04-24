@@ -1,19 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState,useEffect } from 'react';
-import grafico from '../assets/grafico.png';
-import fichapaciente from '../assets/fichapaciente.png';
-import cadastropaciente from '../assets/cadastropaciente.png';
-import anamnese from '../assets/anamnese.png';
-import anamnesemobile from '../assets/anamnesemobile.png';
-import evolucao from '../assets/evolucao.png';
+import Link from 'next/link'
 import carefly from '../assets/images/carefly.png'
 import carefly2 from '../assets/images/carefly2.png'
 import favicon from '../assets/images/favicon.ico'
-import agencyMarketing from '../assets/images/illustration/agency-marketing.svg'
-import collaboration from '../assets/images/pictures/office-kind-of-collaboration.jpg'
-import menina from '../assets/meninalaptop.jpg'
-import meninasmartphone from '../assets/meninasmartphone.jpg'
 
 function Header(){
 
@@ -55,20 +46,22 @@ function Header(){
                             <div className={"header-menu collapse navbar-collapse "+(novo ? "show":"")}>
                                 <ul className="navbar-nav mr-auto">
                                     <li className="nav-item dropdown mega-menu-advanced-wrapper">
+                                        <div className="nav-link" >
+                                            <Link href="/#main"><span style={{color:'#000',cursor:'pointer'}}>Início</span></Link>
+                                        </div>
 
-                                        <a className="nav-link" href="/#main" id="homelink" >
-                                            Início
-                                        </a>
                                     </li>
                                     <li className="nav-item dropdown mega-menu-advanced-wrapper">
-                                        <a className="nav-link" href="/#features"  >
-                                            Funcionalidades
-                                        </a>
+                                        <div className="nav-link" >
+                                            <Link href="/#features"><span style={{color:'#000',cursor:'pointer'}}>Funcionalidades</span></Link>
+                                        </div>
+
                                     </li>
                                     <li className="nav-item dropdown mega-menu-advanced-wrapper">
-                                        <a className="nav-link" href="/#plan"  >
-                                            Preços e planos
-                                        </a>
+                                        <div className="nav-link" >
+                                            <Link href="/#plan"><span style={{color:'#000',cursor:'pointer'}}> Preços e planos</span></Link>
+                                        </div>
+                                      
                                     </li>
                                     {novo && <li className="nav-item dropdown mega-menu-advanced-wrapper">
                                         <a href="https://app.wayfly.com.br" rel="noreferrer" target="_blank" className=" nav-link btn btn-global btn-curved btn-overlay  d-lg-block">
@@ -158,15 +151,21 @@ function Footer(){
                                     <nav className="footer-nav">
                                         <ul className="nav flex-column">
                                             <li className="nav-item">
-                                                <a className="nav-link" href="/#main">Início</a>
+                                                <div className="nav-link" >
+                                                    <Link href="/#main"><span style={{color:'#fff',cursor:'pointer'}}>Início</span></Link>
+                                                </div>
                                             </li>
                                             <li className="nav-item">
-                                                <a className="nav-link" href="/#features"  >
-                                                    Funcionalidades
-                                                </a>
+                                                <div className="nav-link" >
+                                                    <Link href="/#features"><span style={{color:'#fff',cursor:'pointer'}}>Funcionalidades</span></Link>
+                                                </div>
+
                                             </li>
                                             <li className="nav-item">
-                                                <a className="nav-link" href="/#plan">Preços e planos</a>
+                                                <div className="nav-link" >
+                                                    <Link href="/#plan"><span style={{color:'#fff',cursor:'pointer'}}>Preços e planos</span></Link>
+                                                </div>
+
                                             </li>
                                         </ul>
                                     </nav>
