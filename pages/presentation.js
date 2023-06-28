@@ -61,7 +61,7 @@ function Header(){
                                         <div className="nav-link" >
                                             <Link href="/#plan"><span style={{color:'#000',cursor:'pointer'}}> Preços e planos</span></Link>
                                         </div>
-                                      
+
                                     </li>
                                     {novo && <li className="nav-item dropdown mega-menu-advanced-wrapper">
                                         <a href="https://app.wayfly.com.br" rel="noreferrer" target="_blank" className=" nav-link btn btn-global btn-curved btn-overlay  d-lg-block">
