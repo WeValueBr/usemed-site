@@ -8,7 +8,7 @@ const nextConfig = {
         source: '/:path*',
         has: [
           {
-            type: 'host',git stat
+            type: 'host',
             value: 'usemed.com.br',
           },
         ],
