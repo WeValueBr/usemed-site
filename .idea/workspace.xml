@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3be025-0c6c-477c-850a-623fadff190e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <workItem from="1689333829326" duration="2646000" />
       <workItem from="1689479820741" duration="5879000" />
       <workItem from="1689548498630" duration="606000" />
-      <workItem from="1694207190676" duration="146000" />
+      <workItem from="1694207190676" duration="787000" />
     </task>
     <servers />
   </component>
