@@ -1,11 +1,11 @@
-/** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig} */layoyt
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   async redirects() {
     return [
       {
-        source: '/',
+        source: '/:path*',
         has: [
           {
             type: 'host',
