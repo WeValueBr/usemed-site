@@ -438,7 +438,7 @@ function View(){
                                 <div className="row mt-3">
                                     <div className="col-md-4 col-sm-4 mb-3">
                                         <div className="simple-icon-text">
-                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-business font-xxl"></i> 266.771</h3>
+                                            <h3 className="simple-icon-text-title font-md mb-1"><i className="icon-business font-xxl"></i> 149.203</h3>
                                             <p className="font-regular font-weight-light">Atendimentos finalizados</p>
                                         </div>
                                     </div>
