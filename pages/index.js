@@ -291,11 +291,7 @@ function Plan(){
                                 <li>Plano terapêutico livre</li>
                                 <li>Controle de perfil de usuários</li>
                                 <li>Download e impressão da documentação sempre que necessário</li>
-	 			<li>Contas a pagar</li>
-                                <li>Contas a receber</li>
-                                <li>Relatório de pagamento</li>
-                                <li>Relatório de inadimplência</li>
-                                <li>Relatório de adimplente</li>
+	 			
                             </ul>
                             <div className="price-bottom same-height" style={{height: 112.797}}>
                                 {
