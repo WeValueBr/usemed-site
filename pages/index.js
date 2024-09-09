@@ -279,7 +279,7 @@ function Plan(){
                     <div className="box rounded-lg shadow shadow-more price-table">
                         <div className="price-table-item" data-plan="monthly">
                             <i className="icon-paper-plane"></i>
-                            <h3 className="font-lg">Básico</h3>
+                            <h3 className="font-lg">Plus</h3>
                             <ul className="price-table-detail font-regular font-weight-light mt-3 mb-4">
                                 <li>Cadastro paciente</li>
                                 <li>Cadastro do profissional com especialidades de atuação</li>
@@ -308,7 +308,7 @@ function Plan(){
                                 }
                                 <small>por profissional</small>
                                 <div className="mt-3 text-center">
-                                    <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5521990452839&amp;text=Olá, gostaria de informações sobre o plano básico."  className="btn btn-success btn-curved btn-overlay">Comece agora</a>
+                                    <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5521990452839&amp;text=Olá, gostaria de informações sobre o plano plus."  className="btn btn-success btn-curved btn-overlay">Comece agora</a>
                                 </div>
                             </div>
                         </div>
