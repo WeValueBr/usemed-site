@@ -291,7 +291,11 @@ function Plan(){
                                 <li>Plano terapêutico livre</li>
                                 <li>Controle de perfil de usuários</li>
                                 <li>Download e impressão da documentação sempre que necessário</li>
-	 			
+	 			<li>Contas a pagar</li>
+                                <li>Contas a receber</li>
+                                <li>Relatório de pagamento</li>
+                                <li>Relatório de inadimplência</li>
+                                <li>Relatório de adimplente</li>
                             </ul>
                             <div className="price-bottom same-height" style={{height: 112.797}}>
                                 {
@@ -309,6 +313,7 @@ function Plan(){
                             </div>
                         </div>
                     </div>
+					</div>
                 </div>
                 <div className="section-figure-wrap width-50vw  position-right-0 position-top-0 position-absolute pointer-events-none">
                 <figure className="section-figure position-relative m-0 z-index--1 opacity-lg-10">
