@@ -291,29 +291,7 @@ function Plan(){
                                 <li>Plano terapêutico livre</li>
                                 <li>Controle de perfil de usuários</li>
                                 <li>Download e impressão da documentação sempre que necessário</li>
-                            </ul>
-                            <div className="price-bottom same-height" style={{height: 112.797}}>
-                                {
-                                    type == false ?
-                                        <div className="price-table-price font-weight-bold font-lg" data-period="monthly">R$ 40,00 <small>/mês</small> <br/> </div>
-                                    :
-                                        <div className="price-table-price font-weight-bold font-lg" data-period="monthly">
-                                            R$ 420,00 <small>/ano</small>
-                                        </div>
-                                }
-                                <small>por profissional</small>
-                                <div className="mt-3 text-center">
-                                    <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5521975336733&amp;text=Olá, gostaria de informações sobre o plano básico."  className="btn btn-success btn-curved btn-overlay">Comece agora</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="price-table-item featured" data-plan="monthly">
-
-                            <i className="icon-aircraft"></i>
-                            <h3 className="font-lg">Plus</h3>
-                            <ul className="price-table-detail font-regular font-weight-light mt-3 mb-4">
-                                <li style={{fontWeight:'bold'}}><b>Tudo do plano Básico +</b></li>
-                                <li>Contas a pagar</li>
+	 			<li>Contas a pagar</li>
                                 <li>Contas a receber</li>
                                 <li>Relatório de pagamento</li>
                                 <li>Relatório de inadimplência</li>
@@ -322,18 +300,17 @@ function Plan(){
                             <div className="price-bottom same-height" style={{height: 112.797}}>
                                 {
                                     type == false ?
-                                        <div className="price-table-price font-weight-bold font-lg" data-period="monthly">R$ 50,00 <small>/mês</small> <br/> </div>
+                                        <div className="price-table-price font-weight-bold font-lg" data-period="monthly">R$ 55,00 <small>/mês</small> <br/> </div>
                                     :
                                         <div className="price-table-price font-weight-bold font-lg" data-period="monthly">
-                                            R$ 540,00 <small>/ano</small>
+                                            R$ 627,00 <small>/ano</small>
                                         </div>
                                 }
                                 <small>por profissional</small>
                                 <div className="mt-3 text-center">
-                                    <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5521975336733&amp;text=Olá, gostaria de informações sobre o plano plus."  className="btn btn-success btn-curved btn-overlay">Comece agora</a>
+                                    <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5521990452839&amp;text=Olá, gostaria de informações sobre o plano básico."  className="btn btn-success btn-curved btn-overlay">Comece agora</a>
                                 </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -917,7 +894,7 @@ export default function Home() {
                 <Plan />
 
                 <div style={{bottom: 20,display: 'block',position: 'fixed',right: 20,zIndex: 999,width: 60}}>
-                    <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5521975336733&amp;text=Olá, gostaria de informações sobre o sistema Wayfly" >
+                    <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5521990452839&amp;text=Olá, gostaria de informações sobre o sistema Wayfly" >
                         <svg viewBox="0 0 60 60" fill="none">
                             <path d="M30 60C13.456 60 0 46.536 0 29.994 0 13.453 13.456 0 30 0s30 13.453 30 29.994C60 46.537 46.544 60 30 60z" fill="#00C52B"></path>
                             <path fillRule="evenodd" clipRule="evenodd" d="M30.564 13.5C21.979 13.5 15 20.703 15 29.554c0 3.119.86 6.111 2.484 8.704l-2.361 5.37a1.429 1.429 0 00.208 1.492c.264.322.642.497 1.029.497.123 0 .236-.02.359-.048l6.516-1.843a15.197 15.197 0 007.329 1.891c8.584 0 15.563-7.203 15.563-16.063 0-8.85-6.979-16.054-15.564-16.054zm0 29.31c-2.276 0-4.505-.624-6.47-1.803a1.32 1.32 0 00-1.048-.146l-4.259 1.208 1.483-3.372a1.46 1.46 0 00-.133-1.404 13.441 13.441 0 01-2.427-7.749c0-7.31 5.761-13.256 12.844-13.256 7.083 0 12.844 5.946 12.844 13.256.01 7.32-5.752 13.266-12.835 13.266z" fill="#fff"></path>
