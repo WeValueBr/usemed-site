@@ -15,7 +15,7 @@ import collaboration from '../assets/images/pictures/office-kind-of-collaboratio
 import menina from '../assets/meninalaptop.jpg'
 import meninasmartphone from '../assets/meninasmartphone.jpg'
 
-function Header(){
+export function Header(){
 
     const [novo,setNovo] = useState();
 
@@ -96,7 +96,7 @@ function Header(){
     )
 }
 
-function Footer(){
+export function Footer(){
     return(
         <footer className="footer footer-global">
             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 1001 189.75" className="footer-top-shape">
@@ -179,12 +179,7 @@ function Footer(){
                                 <h3 className="font-sm footer-title">Contate-<span>nos.</span></h3>
                                 <div className="footer-col-body">
                                     <div className="footer-contact-widget mt-4">
-                                        <div className="footer-contact-item media mb-3">
-                                            <i className="icon-marker align-self-center mr-3"></i>
-                                            <div className="media-body">
-                                                Rua Aurélio de Figueiredo, 330 - sala 201 - Campo Grande, Rio de Janeiro - RJ, 23052-000
-                                            </div>
-                                        </div>
+
                                         <div className="footer-contact-item media mb-3">
                                             <i className="icon-phone align-self-center mr-3"></i>
                                             <div className="media-body">
@@ -204,7 +199,7 @@ function Footer(){
                                         <div className="footer-contact-item media mb-3">
                                             <i className="icon-new-post align-self-center mr-3"></i>
                                             <div className="media-body">
-                                                suporte@wayfly.com.br
+                                                contato@wayfly.com.br
                                             </div>
                                         </div>
                                     </div>
@@ -291,7 +286,7 @@ function Plan(){
                                 <li>Plano terapêutico livre</li>
                                 <li>Controle de perfil de usuários</li>
                                 <li>Download e impressão da documentação sempre que necessário</li>
-	 			<li>Contas a pagar</li>
+	 			                <li>Contas a pagar</li>
                                 <li>Contas a receber</li>
                                 <li>Relatório de pagamento</li>
                                 <li>Relatório de inadimplência</li>
@@ -578,6 +573,20 @@ function View(){
             </svg>
         </section>
     );
+}
+
+export function WhatsApp(){
+    return(
+        <div style={{bottom: 20,display: 'block',position: 'fixed',right: 20,zIndex: 999,width: 60}}>
+            <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5521990452839&amp;text=Olá, gostaria de informações sobre o sistema Wayfly" >
+                <svg viewBox="0 0 60 60" fill="none">
+                    <path d="M30 60C13.456 60 0 46.536 0 29.994 0 13.453 13.456 0 30 0s30 13.453 30 29.994C60 46.537 46.544 60 30 60z" fill="#00C52B"></path>
+                    <path fillRule="evenodd" clipRule="evenodd" d="M30.564 13.5C21.979 13.5 15 20.703 15 29.554c0 3.119.86 6.111 2.484 8.704l-2.361 5.37a1.429 1.429 0 00.208 1.492c.264.322.642.497 1.029.497.123 0 .236-.02.359-.048l6.516-1.843a15.197 15.197 0 007.329 1.891c8.584 0 15.563-7.203 15.563-16.063 0-8.85-6.979-16.054-15.564-16.054zm0 29.31c-2.276 0-4.505-.624-6.47-1.803a1.32 1.32 0 00-1.048-.146l-4.259 1.208 1.483-3.372a1.46 1.46 0 00-.133-1.404 13.441 13.441 0 01-2.427-7.749c0-7.31 5.761-13.256 12.844-13.256 7.083 0 12.844 5.946 12.844 13.256.01 7.32-5.752 13.266-12.835 13.266z" fill="#fff"></path>
+                    <path fillRule="evenodd" clipRule="evenodd" d="M36.551 31.962c-.651-.4-1.501-.848-2.266-.526-.586.253-.963 1.199-1.35 1.686-.199.254-.426.293-.728.166-2.21-.907-3.91-2.437-5.128-4.533-.208-.321-.17-.584.076-.887.368-.448.83-.955.935-1.56.104-.604-.17-1.305-.416-1.841-.311-.683-.651-1.667-1.322-2.057-.614-.36-1.417-.156-1.964.302-.945.79-1.398 2.037-1.38 3.265 0 .351.048.702.124 1.034.188.809.557 1.569.963 2.29a19.19 19.19 0 001 1.58c1.181 1.656 2.655 3.099 4.355 4.171.85.536 1.765 1.014 2.72 1.336 1.066.36 2.01.74 3.163.516 1.2-.234 2.39-1.004 2.87-2.203.143-.35.209-.75.133-1.12-.17-.78-1.18-1.239-1.785-1.619z" fill="#fff"></path>
+                </svg>
+            </a>
+        </div>
+    )
 }
 
 function Features(){
@@ -894,15 +903,7 @@ export default function Home() {
 
                 <Plan />
 
-                <div style={{bottom: 20,display: 'block',position: 'fixed',right: 20,zIndex: 999,width: 60}}>
-                    <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5521990452839&amp;text=Olá, gostaria de informações sobre o sistema Wayfly" >
-                        <svg viewBox="0 0 60 60" fill="none">
-                            <path d="M30 60C13.456 60 0 46.536 0 29.994 0 13.453 13.456 0 30 0s30 13.453 30 29.994C60 46.537 46.544 60 30 60z" fill="#00C52B"></path>
-                            <path fillRule="evenodd" clipRule="evenodd" d="M30.564 13.5C21.979 13.5 15 20.703 15 29.554c0 3.119.86 6.111 2.484 8.704l-2.361 5.37a1.429 1.429 0 00.208 1.492c.264.322.642.497 1.029.497.123 0 .236-.02.359-.048l6.516-1.843a15.197 15.197 0 007.329 1.891c8.584 0 15.563-7.203 15.563-16.063 0-8.85-6.979-16.054-15.564-16.054zm0 29.31c-2.276 0-4.505-.624-6.47-1.803a1.32 1.32 0 00-1.048-.146l-4.259 1.208 1.483-3.372a1.46 1.46 0 00-.133-1.404 13.441 13.441 0 01-2.427-7.749c0-7.31 5.761-13.256 12.844-13.256 7.083 0 12.844 5.946 12.844 13.256.01 7.32-5.752 13.266-12.835 13.266z" fill="#fff"></path>
-                            <path fillRule="evenodd" clipRule="evenodd" d="M36.551 31.962c-.651-.4-1.501-.848-2.266-.526-.586.253-.963 1.199-1.35 1.686-.199.254-.426.293-.728.166-2.21-.907-3.91-2.437-5.128-4.533-.208-.321-.17-.584.076-.887.368-.448.83-.955.935-1.56.104-.604-.17-1.305-.416-1.841-.311-.683-.651-1.667-1.322-2.057-.614-.36-1.417-.156-1.964.302-.945.79-1.398 2.037-1.38 3.265 0 .351.048.702.124 1.034.188.809.557 1.569.963 2.29a19.19 19.19 0 001 1.58c1.181 1.656 2.655 3.099 4.355 4.171.85.536 1.765 1.014 2.72 1.336 1.066.36 2.01.74 3.163.516 1.2-.234 2.39-1.004 2.87-2.203.143-.35.209-.75.133-1.12-.17-.78-1.18-1.239-1.785-1.619z" fill="#fff"></path>
-                        </svg>
-                    </a>
-                </div>
+                <WhatsApp />
             </main>
             <Footer/>
         </div>
