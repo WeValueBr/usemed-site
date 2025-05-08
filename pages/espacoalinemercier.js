@@ -51,7 +51,7 @@ export default function Home() {
                     <div class="container" style={{display:"flex"}}>
                         <div class="row">
                             <div class="col-md-4">
-                                <video autoPlay ref={videoRef} width="40%" height="auto" controls style={{borderRadius:10}}>
+                                <video autoPlay ref={videoRef} width="100%" height="auto" controls style={{borderRadius:10}}>
                                     <source  src="/aline.MOV" type="video/mp4" />
                                 </video>
                             </div>
