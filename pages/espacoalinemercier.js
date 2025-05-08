@@ -49,23 +49,25 @@ export default function Home() {
                         </div>
                     </div>
                     <div class="container" style={{display:"flex"}}>
-                        <video autoPlay ref={videoRef} width="40%" height="auto" controls style={{borderRadius:10}}>
-                            <source  src="/aline.MOV" type="video/mp4" />
-                        </video>
-                        <div style={{padding:30}}>
-                            <p>
-                                Há cerca de 3 meses, o Espaço Aline Mercier passou a utilizar o sistema Wayfly, e desde então, a rotina da equipe passou por uma verdadeira transformação.
+                        <div class="row">
+                            <div class="col-md-4">
+                                <video autoPlay ref={videoRef} width="40%" height="auto" controls style={{borderRadius:10}}>
+                                    <source  src="/aline.MOV" type="video/mp4" />
+                                </video>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    Há cerca de 3 meses, o Espaço Aline Mercier passou a utilizar o sistema Wayfly, e desde então, a rotina da equipe passou por uma verdadeira transformação.
 
-                                Segundo Aline, fundadora do espaço, a mudança mais impactante foi na organização das informações dos pacientes. O sistema facilitou muito o preenchimento das evoluções, anamneses e plano terapêutico, tudo de forma centralizada e acessível. “Antes era tudo feito no papel. Agora está tudo ali, organizado, com fácil acesso”, conta.
+                                    Segundo Aline, fundadora do espaço, a mudança mais impactante foi na organização das informações dos pacientes. O sistema facilitou muito o preenchimento das evoluções, anamneses e plano terapêutico, tudo de forma centralizada e acessível. “Antes era tudo feito no papel. Agora está tudo ali, organizado, com fácil acesso”, conta.
 
-                                Outro destaque foi a emissão automática de notas fiscais, que acontece logo após o pagamento. Isso reduziu drasticamente o tempo gasto com tarefas administrativas e trouxe mais segurança para os profissionais. “O sistema faz tudo pra você. Isso facilita demais o nosso dia a dia.”
+                                    Outro destaque foi a emissão automática de notas fiscais, que acontece logo após o pagamento. Isso reduziu drasticamente o tempo gasto com tarefas administrativas e trouxe mais segurança para os profissionais. “O sistema faz tudo pra você. Isso facilita demais o nosso dia a dia.”
 
-                                Além disso, Aline destacou a usabilidade da plataforma: mesmo quem não tem muita familiaridade com tecnologia consegue usar sem dificuldade. Com isso, a equipe ganhou tempo e pôde focar ainda mais no que realmente importa: o atendimento de qualidade aos pacientes.
+                                    Além disso, Aline destacou a usabilidade da plataforma: mesmo quem não tem muita familiaridade com tecnologia consegue usar sem dificuldade. Com isso, a equipe ganhou tempo e pôde focar ainda mais no que realmente importa: o atendimento de qualidade aos pacientes.
 
-                                O resultado? Mais agilidade, organização e tranquilidade para toda a equipe.
-
-
-                            </p>
+                                    O resultado? Mais agilidade, organização e tranquilidade para toda a equipe.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
